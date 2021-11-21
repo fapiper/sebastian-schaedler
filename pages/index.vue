@@ -1,6 +1,8 @@
 <template>
-  <div class="min-h-screen">
-    <h1 class="text-2xl">Hello World</h1>
+  <div>
+    <PageHeader type='hero' title='Sebastian Schädler'
+                description='Networker. Charakter-Trainer. Torwart-Coach. Podcaster.'>
+    </PageHeader>
   </div>
 </template>
 

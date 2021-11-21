@@ -40,7 +40,7 @@ export default {
 
   googleFonts: {
     families: {
-      Rubik: true,
+      Rubik: [300, 400, 600, 800]
     }
   },
 
@@ -50,5 +50,7 @@ export default {
     }
   },
 
-  build: {}
+  build: {
+    transpile: ['splitting']
+  }
 }

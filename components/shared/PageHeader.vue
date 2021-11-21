@@ -1,5 +1,5 @@
 <template>
-  <div class='container px-4 mx-auto'>
+  <header class='container px-4 mx-auto'>
     <div class='min-h-screen grid grid-cols-2'>
       <div class='flex items-center justify-center'>
         <div class='w-full max-w-lg'>
@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
 </template>
 

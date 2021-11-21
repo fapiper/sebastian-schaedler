@@ -1,3 +1,15 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+body {
+  @apply bg-blue text-white
+}
+
+section {
+  @apply my-20
+}
+
+.title {
+  @apply text-5xl font-semibold uppercase before:text-yellow before:content-[attr(data-title-prefix)] before:inline-block inline-block before:pr-4;
+}

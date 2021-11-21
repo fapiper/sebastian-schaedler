@@ -14,29 +14,34 @@ export default {
     ]
   },
 
-  css: [
-  ],
+  css: [],
 
-  plugins: [
-  ],
+  plugins: [],
 
-  components: true,
+  components: ['~/components/home/', '~/components/shared/', '~/components/layout/'],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts'
   ],
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    '@nuxtjs/pwa'
   ],
 
   axios: {},
 
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
+    cssPath: '~/assets/css/tailwind.css'
+  },
+
+  googleFonts: {
+    families: {
+      Rubik: true,
+    }
   },
 
   pwa: {
@@ -45,6 +50,5 @@ export default {
     }
   },
 
-  build: {
-  }
+  build: {}
 }

@@ -18,7 +18,7 @@ export default {
 
   plugins: [],
 
-  components: ['~/components/home/', '~/components/shared/',  '~/components/shared/social', '~/components/layout/'],
+  components: ['~/components/home/', '~/components/about/', '~/components/shared/', '~/components/shared/social', '~/components/layout/'],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [

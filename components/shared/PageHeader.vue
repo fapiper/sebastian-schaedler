@@ -2,7 +2,7 @@
   <header class='container px-4 mx-auto max-w-5xl'>
     <div class='relative min-h-screen flex items-center'>
       <div class='relative z-10 max-w-lg'>
-        <h1 class='inline text-8xl uppercase font-bold leading-none' :class="{'text-9xl': type==='default'}">{{ title
+        <h1 class='inline text-7xl tracking-wide uppercase font-bold leading-none' :class="{'text-9xl': type==='default'}">{{ title
           }}</h1>
         <span class='inline-block w-full h-3 bg-yellow my-4'></span>
         <div class='space-y-2' :class="{'text-center': type==='default'}">
@@ -10,9 +10,7 @@
           <p>{{ description }}</p>
         </div>
       </div>
-      <div class='absolute top-0 right-0 h-full flex p-20 pr-0'>
-        <slot></slot>
-      </div>
+      <slot></slot>
     </div>
   </header>
 

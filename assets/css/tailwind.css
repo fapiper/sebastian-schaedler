@@ -10,6 +10,17 @@ section {
   @apply my-20
 }
 
+.bg-text {
+  @apply text-center inline-block text-20-screen uppercase font-bold whitespace-nowrap;
+  -webkit-text-fill-color: theme('colors.blue.DEFAULT');
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: theme('colors.yellow.DEFAULT');
+}
+
 .title {
   @apply text-5xl font-semibold uppercase before:text-yellow before:content-[attr(data-title-prefix)] before:inline-block inline-block before:pr-4;
+}
+
+.title-sm {
+  @apply text-3xl uppercase font-semibold tracking-wider
 }

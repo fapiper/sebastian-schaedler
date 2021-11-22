@@ -29,7 +29,8 @@ export default {
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/cloudinary'
   ],
 
   axios: {},
@@ -42,6 +43,10 @@ export default {
     families: {
       Rubik: [300, 400, 600, 800]
     }
+  },
+
+  cloudinary: {
+    cloudName: process.env.CLOUDINARY_CLOUDNAME
   },
 
   pwa: {

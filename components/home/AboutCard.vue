@@ -1,6 +1,6 @@
 <template>
   <section class='relative'>
-    <div class='container px-4 mx-auto lg:max-w-6xl'>
+    <div class='container px-4 mx-auto lg:max-w-5xl'>
       <div class='grid grid-cols-2 gap-4'>
         <div class='space-y-8'>
           <h2 class='title' data-title-prefix='/about'>Sebastian</h2>

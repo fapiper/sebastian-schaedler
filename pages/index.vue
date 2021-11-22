@@ -1,6 +1,7 @@
 <template>
   <div>
     <Hero />
+    <KeywordBanner />
     <AboutCard />
     <VisionCard />
     <SocialShare />
@@ -10,5 +11,9 @@
 </template>
 
 <script>
-export default {}
+import KeywordBanner from '../components/shared/KeywordBanner'
+
+export default {
+  components: { KeywordBanner }
+}
 </script>

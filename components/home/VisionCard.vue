@@ -1,6 +1,6 @@
 <template>
   <section class='relative'>
-    <div class='container px-4 mx-auto lg:max-w-6xl'>
+    <div class='container px-4 mx-auto lg:max-w-5xl'>
       <h2 class='title mb-8' data-title-prefix='/Business'>& Vision</h2>
 
       <div class='grid grid-cols-7 gap-4 lg:gap-8 items-center'>

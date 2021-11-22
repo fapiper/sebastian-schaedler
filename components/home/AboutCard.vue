@@ -22,7 +22,19 @@
             Mehr erfahren
           </NuxtLink>
         </div>
+        <div>
+          <img
+            class='w-full'
+            :src="$cloudinary.image.url(
+          'sebastian-schaedler/video_preview_xciqnd',
+        {
+        width: '750',
+        crop: 'scale'
+        }
+        )" alt='Video Preview'
+          />
 
+        </div>
       </div>
     </div>
   </section>

@@ -1,11 +1,22 @@
 <template>
   <section class='relative'>
     <div class='container px-4 mx-auto lg:max-w-6xl'>
-      <h2 class='title mb-4' data-title-prefix='/Business'>& Vision</h2>
+      <h2 class='title mb-8' data-title-prefix='/Business'>& Vision</h2>
 
-      <div class='grid grid-cols-5 gap-4 items-center'>
-        <div class='col-span-2'></div>
-        <div class='col-span-2 space-y-8'>
+      <div class='grid grid-cols-7 gap-4 lg:gap-8 items-center'>
+        <div class='col-span-2'>
+          <img
+            class='w-full'
+            :src="$cloudinary.image.url(
+          'sebastian-schaedler/DSC09888_qzm8jn',
+        {
+        width: '450',
+        crop: 'scale'
+        }
+        )" alt='Vision'
+          />
+        </div>
+        <div class='col-span-4 space-y-8'>
           <div>
             <h3 class='text-2xl uppercase leading-normal text-yellow'>Network</h3>
             <p>Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte
@@ -25,9 +36,6 @@
                     class='inline-flex items-center justify-center text-center bg-yellow text-white px-8 py-2 min-h-4'>
             Lass uns zusammenarbeiten
           </NuxtLink>
-        </div>
-        <div class='relative'>
-
         </div>
       </div>
 

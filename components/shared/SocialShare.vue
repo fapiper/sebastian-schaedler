@@ -3,11 +3,11 @@
     <div class='container px-4 mx-auto lg:max-w-6xl'>
       <h2 class='title-sm text-center'>Social Media</h2>
     </div>
-    <div class='relative text-yellow overflow-hidden w-full h-40'>
+    <div class='relative text-yellow overflow-hidden w-full -my-16' :class="{'!-my-8':dense}">
         <span
-          class='bg-text absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-36'>Sebastian Schädler</span>
+          class='relative left-1/2 bg-text transform -translate-x-1/2 text-center' :class="{'!text-10-screen': dense}">Sebastian Schädler</span>
       <div
-        class='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 container px-4 mx-auto lg:max-w-6xl'>
+        class='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 container px-4 mx-auto lg:max-w-5xl'>
         <ul class='flex items-center justify-center space-x-8'>
           <li>
             <Instagram class='!w-12 !h-12 bg-blue'></Instagram>
@@ -26,15 +26,19 @@
           </li>
         </ul>
       </div>
-      '
-
-    </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    dense: {
+      type: Boolean,
+      default: false
+    }
+  }
+}
 </script>
 
 <style lang='postcss'>

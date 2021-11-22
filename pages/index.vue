@@ -3,17 +3,15 @@
     <Hero />
     <KeywordBanner />
     <AboutCard />
+    <ImageSlider />
     <VisionCard />
-    <SocialShare />
+    <SocialShare :dense='true' />
     <CoachingCard />
     <Feedback />
   </div>
 </template>
 
 <script>
-import KeywordBanner from '../components/shared/KeywordBanner'
 
-export default {
-  components: { KeywordBanner }
-}
+export default {}
 </script>

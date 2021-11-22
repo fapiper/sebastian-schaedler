@@ -1,14 +1,13 @@
 <template>
-  <section class='relative w-full overflow-hidden h-24'>
-    <div ref='banner' class='flex absolute top-1/2 left-0 text-center transform -translate-y-1/2'>
+  <section class='relative w-full overflow-hidden'>
+    <div ref='banner' class='flex text-center'>
       <span v-for='(keyword, index) of keywords' :key='index' class='bg-text !text-10-screen'>{{ keyword
         }} {{ index !== keyword.length - 1 ? '-' : '' }}</span>
     </div>
 
-    <div class='container px-4 mx-auto lg:max-w-6xl'>
-      <div class='flex justify-around absolute top-1/2 left-0 transform w-full -translate-y-1/2 title-sm'>
-        <span v-for='keyword of keywords' :key='keyword'>{{ keyword }}</span>
-      </div>
+    <div
+      class='absolute absolute top-1/2 left-1/2 container px-4 lg:max-w-6xl flex w-full justify-around transform w-full -translate-y-1/2 -translate-x-1/2'>
+      <span v-for='keyword of keywords' :key='keyword' class='title-sm'>{{ keyword }}</span>
     </div>
   </section>
 </template>
@@ -22,12 +21,12 @@ export default {
   },
   mounted() {
     this.$gsap.to(this.$refs.banner, {
-      xPercent: -20,
+      xPercent: -40,
       scrollTrigger: {
         trigger: this.$refs.banner,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 0.5
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 0.75
       }
     })
   }

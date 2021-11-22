@@ -16,7 +16,7 @@ export default {
 
   css: [],
 
-  plugins: [],
+  plugins: ['~/plugins/vue-awesome-swiper.client.js'],
 
   components: ['~/components/home/', '~/components/about/', '~/components/shared/', '~/components/shared/social', '~/components/layout/'],
 
@@ -54,7 +54,7 @@ export default {
     extraPlugins: {
       scrollTo: true,
       scrollTrigger: true
-    },
+    }
   },
 
   pwa: {

@@ -24,7 +24,8 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    'nuxt-gsap-module'
   ],
 
   modules: [
@@ -47,6 +48,13 @@ export default {
 
   cloudinary: {
     cloudName: process.env.CLOUDINARY_CLOUDNAME
+  },
+
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true
+    },
   },
 
   pwa: {

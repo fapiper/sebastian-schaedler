@@ -1,8 +1,8 @@
 <template>
   <section class='relative w-full overflow-hidden h-24'>
-    <div class='flex absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/2'>
+    <div ref='banner' class='flex absolute top-1/2 left-0 text-center transform -translate-y-1/2'>
       <span v-for='(keyword, index) of keywords' :key='index' class='bg-text !text-10-screen'>{{ keyword
-        }} {{ index !== keyword.length-1 ? '-' : '' }}</span>
+        }} {{ index !== keyword.length - 1 ? '-' : '' }}</span>
     </div>
 
     <div class='container px-4 mx-auto lg:max-w-6xl'>
@@ -19,6 +19,17 @@ export default {
     return {
       keywords: ['Familie', 'Loyalität', 'Freiheit', 'Realness']
     }
+  },
+  mounted() {
+    this.$gsap.to(this.$refs.banner, {
+      xPercent: -20,
+      scrollTrigger: {
+        trigger: this.$refs.banner,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 0.5
+      }
+    })
   }
 }
 </script>

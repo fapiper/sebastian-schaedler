@@ -5,20 +5,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Rubik', ...defaultTheme.fontFamily.sans]
+        sans: ['Rubik', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         '10-screen': '10vw',
         '14-screen': '14vw',
-        '20-screen': '20vw'
+        '20-screen': '20vw',
       },
       colors: {
         blue: { light: '#1E3143', DEFAULT: '#1E3143', dark: '#1F2B36' },
-        yellow: { DEFAULT: '#CDA000' }
-      }
-    }
+        yellow: { DEFAULT: '#CDA000' },
+      },
+    },
   },
-  plugins: [
-    require('tailwindcss-text-fill-stroke')
-  ]
+  plugins: [require('@tailwindcss/forms')],
 }

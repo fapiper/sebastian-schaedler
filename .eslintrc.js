@@ -7,9 +7,9 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   plugins: [],
   // add your custom rules here
-  rules: {}
+  rules: {},
 }

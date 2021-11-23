@@ -7,63 +7,64 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   css: [],
 
-  plugins: ['~/plugins/vue-awesome-swiper.client.js'],
+  plugins: ['~/plugins/vue-awesome-swiper.client.js', '~/plugins/vuelidate.js'],
 
-  components: ['~/components/home/', '~/components/about/', '~/components/shared/', '~/components/shared/social', '~/components/layout/'],
+  components: [
+    '~/components/home/',
+    '~/components/about/',
+    '~/components/contact/',
+    '~/components/shared/',
+    '~/components/shared/social',
+    '~/components/layout/',
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
-    'nuxt-gsap-module'
+    'nuxt-gsap-module',
   ],
 
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    '@nuxtjs/cloudinary'
-  ],
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/cloudinary'],
 
   axios: {},
 
   tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css'
+    cssPath: '~/assets/css/tailwind.css',
   },
 
   googleFonts: {
     families: {
-      Rubik: [300, 400, 600, 800]
-    }
+      Rubik: [300, 400, 600, 800],
+    },
   },
 
   cloudinary: {
-    cloudName: process.env.CLOUDINARY_CLOUDNAME
+    cloudName: process.env.CLOUDINARY_CLOUDNAME,
   },
 
   gsap: {
     extraPlugins: {
       scrollTo: true,
-      scrollTrigger: true
-    }
+      scrollTrigger: true,
+    },
   },
 
   pwa: {
     manifest: {
-      lang: 'de'
-    }
+      lang: 'de',
+    },
   },
 
   build: {
-    transpile: ['splitting']
-  }
+    transpile: ['splitting'],
+  },
 }

@@ -18,7 +18,7 @@ section {
 }
 
 .title {
-  @apply text-5xl font-semibold uppercase before:text-yellow before:content-[attr(data-title-prefix)] before:inline-block inline-block before:pr-4;
+  @apply text-5xl leading-normal font-semibold uppercase before:text-yellow before:content-[attr(data-title-prefix)] before:inline-block inline-block before:pr-4;
 }
 
 .title-sm {

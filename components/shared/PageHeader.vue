@@ -1,44 +1,74 @@
 <template>
-  <header class='container px-4 mx-auto max-w-5xl'>
-    <div class='relative min-h-screen flex items-center'>
-      <div class='relative z-10 max-w-lg'>
-        <h1 class='inline text-7xl tracking-wide uppercase font-bold leading-none' :class="{'text-9xl': type==='default'}">{{ title
-          }}</h1>
-        <span class='inline-block w-full h-3 bg-yellow my-4'></span>
-        <div class='space-y-2' :class="{'text-center': type==='default'}">
-          <h2 v-if="type==='default'" class='font-semibold text-lg'>{{ subtitle }}</h2>
+  <header class="container px-4 mx-auto max-w-5xl">
+    <div class="relative min-h-screen pt-20">
+      <span class="block absolute top-0 left-0 w-3 h-72 bg-yellow"></span>
+      <span class="page-header-title page-header-title--line">{{ title }}</span>
+      <h1 class="page-header-title">
+        {{ title }}
+      </h1>
+      <div class="relative max-w-lg z-20">
+        <span class="inline-block w-full h-3 bg-yellow my-4"></span>
+        <div class="space-y-2 text-center">
+          <h2 class="font-semibold text-lg">
+            {{ subtitle }}
+          </h2>
           <p>{{ description }}</p>
         </div>
       </div>
-      <slot></slot>
+      <img
+        class="absolute top-1/2 transform -translate-y-1/2 right-0 w-3/4 z-10"
+        :src="
+          $cloudinary.image.url(publicId, {
+            width: width,
+            crop: 'scale',
+          })
+        "
+        :alt="alt"
+      />
     </div>
   </header>
-
 </template>
 
 <script>
 export default {
   props: {
-    type: {
-      type: String,
-      default: 'default'
-    },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     subtitle: {
       type: String,
-      default: ''
+      default: '',
     },
     description: {
       type: String,
-      required: true
-    }
-
-  }
+      required: true,
+    },
+    publicId: {
+      type: String,
+      required: true,
+    },
+    alt: {
+      type: String,
+      required: true,
+    },
+    width: {
+      type: Number,
+      default: 1000,
+    },
+  },
 }
 </script>
 
-<style lang='postcss'>
+<style lang="postcss">
+.page-header-title {
+  @apply mt-56 text-9xl tracking-wide uppercase font-bold leading-none;
+}
+
+.page-header-title--line {
+  @apply absolute top-20 left-0 z-20;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: theme('colors.white');
+}
 </style>

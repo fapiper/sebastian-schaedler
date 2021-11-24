@@ -1,5 +1,6 @@
 <template>
   <div>
+    <PageLoader />
     <TheHeader />
     <Nuxt />
     <TheFooter />

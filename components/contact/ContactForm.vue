@@ -265,16 +265,6 @@ import { required, email, helpers } from 'vuelidate/lib/validators'
 const customPhone = helpers.regex('customPhone', /^(?=.*[0-9])[- +()0-9]+$/)
 
 export default {
-  name: 'Data',
-  props: {
-    slice: {
-      type: Object,
-      required: true,
-      default() {
-        return {}
-      },
-    },
-  },
   data() {
     return {
       overlayActive: false,

@@ -12,5 +12,9 @@
 </template>
 
 <script>
-export default {}
+import Transition from '~/mixins/transition.js'
+
+export default {
+  mixins: [Transition],
+}
 </script>

@@ -10,4 +10,10 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import Transition from '~/mixins/transition.js'
+
+export default {
+  mixins: [Transition],
+}
+</script>

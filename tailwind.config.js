@@ -16,6 +16,17 @@ module.exports = {
         blue: { light: '#1E3143', DEFAULT: '#1E3143', dark: '#1F2B36' },
         yellow: { DEFAULT: '#CDA000' },
       },
+      zIndex: {
+        '-10': '-10',
+        60: '60',
+        70: '70',
+        80: '80',
+        90: '90',
+        100: '100',
+      },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

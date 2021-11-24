@@ -49,7 +49,7 @@ export default {
     appear: true,
     leave(el, done) {
       onPageLeave.play().then(() => {
-        this.$nuxt.$emit('toggle-menu', { active: false, ease: false })
+        this.$nuxt.$emit('page-leave')
         done()
       })
     },

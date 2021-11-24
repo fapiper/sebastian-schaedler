@@ -2,7 +2,7 @@
   <div>
     <div
       data-transition-bg
-      class="fixed top-0 left-0 h-screen w-full bg-white z-60"
+      class="fixed top-0 left-0 h-screen w-full bg-white z-80"
     ></div>
     <div
       data-transition-logo-bg
@@ -13,7 +13,7 @@
         h-screen
         w-full
         bg-transparent
-        z-70
+        z-100
         overflow-hidden
         pointer-events-none
       "

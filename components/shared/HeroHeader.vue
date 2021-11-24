@@ -7,7 +7,7 @@
         grid
         lg:grid-cols-2
         items-center
-        pt-20
+        pt-40
         lg:py-20
       "
     >

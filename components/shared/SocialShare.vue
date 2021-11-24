@@ -34,21 +34,27 @@
           lg:max-w-5xl
         "
       >
-        <ul class="flex items-center justify-center space-x-8">
+        <ul class="flex items-center justify-center space-x-8 text-yellow">
           <li>
-            <Instagram class="!w-12 !h-12 bg-blue"></Instagram>
+            <Instagram class="!w-12 !h-12 bg-blue border-yellow"></Instagram>
           </li>
           <li>
-            <Facebook class="!w-12 !h-12 !border-4 !p-3 bg-blue"></Facebook>
+            <Linkedin
+              class="!w-12 !h-12 !border-4 !p-2 bg-blue border-yellow"
+            ></Linkedin>
           </li>
           <li>
-            <Linkedin class="!w-12 !h-12 !border-4 !p-2 bg-blue"></Linkedin>
+            <Facebook
+              class="!w-12 !h-12 !border-4 !p-1.5 bg-blue border-yellow"
+            ></Facebook>
           </li>
           <li>
-            <Podcast class="!w-12 !h-12 bg-blue"></Podcast>
+            <Podcast class="!w-12 !h-12 bg-blue border-yellow"></Podcast>
           </li>
           <li>
-            <Youtube class="!w-12 !h-12 !border-4 !p-2 bg-blue"></Youtube>
+            <Youtube
+              class="!w-12 !h-12 !border-4 !p-1.5 bg-blue border-yellow"
+            ></Youtube>
           </li>
         </ul>
       </div>

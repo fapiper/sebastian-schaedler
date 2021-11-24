@@ -50,10 +50,10 @@
             <Instagram></Instagram>
           </li>
           <li>
-            <Linkedin></Linkedin>
+            <Linkedin class="border-yellow"></Linkedin>
           </li>
           <li>
-            <Facebook></Facebook>
+            <Facebook class="border-yellow"></Facebook>
           </li>
         </ul>
         <img

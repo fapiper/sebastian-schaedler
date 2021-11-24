@@ -1,14 +1,9 @@
 <template>
   <header>
-    <nav
-      ref="navbar"
-      class="fixed top-0 left-0 w-full z-40 bg-transparent lg:bg-blue"
-    >
-      <div class="container px-4 lg:max-w-5xl mx-auto flex">
+    <nav ref="navbar" class="fixed top-0 left-0 w-full z-40 bg-blue">
+      <div class="container px-4 lg:max-w-5xl mx-auto">
         <ul
           class="
-            hidden
-            lg:visible
             w-full
             flex
             h-20
@@ -54,9 +49,6 @@
             >
           </li>
         </ul>
-        <button class="menu-button">
-          <span></span>
-        </button>
       </div>
     </nav>
   </header>
@@ -64,45 +56,8 @@
 
 <script>
 export default {
-  mounted() {
-    const showAnim = this.$gsap
-      .from(this.$refs.navbar, {
-        yPercent: -100,
-        paused: true,
-        duration: 0.2,
-      })
-      .progress(1)
-
-    this.$ScrollTrigger.create({
-      start: 'top top',
-      onUpdate: (self) => {
-        self.direction === -1 ? showAnim.play() : showAnim.reverse()
-      },
-    })
-  },
+  mounted() {},
 }
 </script>
 
-<style lang="postcss">
-.menu-button {
-  @apply relative h-16 w-16 ml-auto;
-}
-
-.menu-button span,
-.menu-button span:before,
-.menu-button span:after {
-  @apply absolute h-px w-full;
-}
-
-.menu-button span {
-  @apply top-1/2 transform -translate-y-1/2;
-}
-
-.menu-button span:before {
-  @apply top-0;
-}
-
-.menu-button span:after {
-  @apply bottom-0;
-}
-</style>
+<style lang="postcss"></style>

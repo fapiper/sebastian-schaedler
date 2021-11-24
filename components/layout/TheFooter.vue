@@ -3,8 +3,8 @@
     <SocialShare class="mb-0" />
     <div class="bg-blue-dark text-white">
       <div class="container px-4 max-w-5xl mx-auto pt-20">
-        <div class="grid grid-cols-6 gap-4 text-white text-opacity-25 text-sm">
-          <div class="col-span-3 space-y-8 lg:pr-16">
+        <div class="grid grid-cols-6 gap-8 text-white text-opacity-25 text-sm">
+          <div class="col-span-6 lg:col-span-3 space-y-8 lg:pr-16">
             <img
               class="w-full max-w-xs"
               :src="
@@ -39,8 +39,15 @@
               </li>
             </ul>
           </div>
-          <ul class="space-y-2">
-            <li class="!mb-8 uppercase text-white text-opacity-100 text-base">
+          <ul class="space-y-2 col-span-3 lg:col-span-1">
+            <li
+              class="
+                !mb-4
+                !lg:mb-8
+                uppercase
+                text-white text-opacity-100 text-base
+              "
+            >
               Navigation
             </li>
             <li>
@@ -59,8 +66,15 @@
               <NuxtLink to="/podcast">Podcast</NuxtLink>
             </li>
           </ul>
-          <ul class="space-y-2">
-            <li class="!mb-8 uppercase text-white text-opacity-100 text-base">
+          <ul class="space-y-2 col-span-3 lg:col-span-1">
+            <li
+              class="
+                !mb-4
+                !lg:mb-8
+                uppercase
+                text-white text-opacity-100 text-base
+              "
+            >
               Social Media
             </li>
             <li>
@@ -75,8 +89,15 @@
               <a href="/" target="_blank" rel="noreferrer noopener">YouTube</a>
             </li>
           </ul>
-          <ul class="space-y-2">
-            <li class="!mb-8 uppercase text-white text-opacity-100 text-base">
+          <ul class="space-y-2 col-span-3 lg:col-span-1">
+            <li
+              class="
+                !mb-4
+                !lg:mb-8
+                uppercase
+                text-white text-opacity-100 text-base
+              "
+            >
               Kontakt
             </li>
             <li>
@@ -90,7 +111,7 @@
             </li>
           </ul>
         </div>
-        <ul class="w-full border-t py-8 mt-8 text-xs leading-relaxed">
+        <ul class="w-full border-t py-4 lg:py-8 mt-8 text-xs">
           <li>Copyright (c) 2021 Sebastian Schädler</li>
           <li>Design by NXT YOU</li>
         </ul>

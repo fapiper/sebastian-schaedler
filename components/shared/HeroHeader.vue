@@ -1,6 +1,16 @@
 <template>
   <header class="container px-4 mx-auto max-w-5xl">
-    <div class="relative min-h-screen grid grid-cols-2 items-center py-20">
+    <div
+      class="
+        relative
+        min-h-screen
+        grid
+        lg:grid-cols-2
+        items-center
+        pt-20
+        lg:py-20
+      "
+    >
       <div
         class="
           relative
@@ -16,14 +26,24 @@
         "
       >
         <h1
-          class="inline text-7xl tracking-wide uppercase font-bold leading-none"
+          class="
+            inline
+            text-6xl
+            lg:text-7xl
+            tracking-wide
+            uppercase
+            font-bold
+            leading-none
+          "
         >
           {{ title }}
         </h1>
         <span class="inline-block w-full h-3 bg-yellow my-4"></span>
         <p>{{ description }}</p>
       </div>
-      <div class="relative top-0 left-0 w-full h-full flex pl-20">
+      <div
+        class="relative top-0 left-0 w-full h-full flex mt-20 lg:mt-0 lg:pl-20"
+      >
         <img
           class="h-full w-full object-cover"
           :src="
@@ -37,7 +57,8 @@
         <ul
           class="
             absolute
-            bottom-0
+            top-0
+            lg:top-unset lg:bottom-0
             right-0
             p-4
             flex
@@ -57,7 +78,14 @@
           </li>
         </ul>
         <img
-          class="absolute bottom-0 left-4 transform translate-y-16 w-80"
+          class="
+            absolute
+            bottom-0
+            left-0
+            transform
+            translate-x-4 translate-y-16
+            w-80
+          "
           :src="
             $cloudinary.image.url('sebastian-schaedler/logo_fkcnoj', {
               width: '450',

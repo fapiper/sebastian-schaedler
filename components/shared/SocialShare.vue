@@ -4,8 +4,8 @@
       <h2 class="relative title-sm text-center z-10">Social Media</h2>
     </div>
     <div
-      class="relative text-yellow overflow-hidden w-full -mt-16 -mb-32"
-      :class="{ '!-my-8': dense }"
+      class="relative text-yellow overflow-hidden w-full lg:-mt-16 lg:-mb-32"
+      :class="{ '!my-4 !lg:-my-8': dense }"
     >
       <span
         ref="banner"

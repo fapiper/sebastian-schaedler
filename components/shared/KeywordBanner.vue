@@ -1,6 +1,17 @@
 <template>
   <section class="relative w-full overflow-hidden">
-    <div ref="banner" class="flex text-center">
+    <div
+      ref="banner"
+      class="
+        absolute
+        top-1/2
+        lg:top-unset
+        -translate-y-1/2
+        lg:translate-y-0 lg:relative
+        flex
+        text-center
+      "
+    >
       <span
         v-for="(keyword, index) of keywords"
         :key="index"
@@ -11,18 +22,22 @@
 
     <div
       class="
-        absolute absolute
-        top-1/2
-        left-1/2
+        relative
+        lg:absolute lg:top-1/2 lg:left-1/2
         container
         px-4
-        lg:max-w-6xl
-        flex
+        max-w-6xl
+        flex flex-col
+        lg:flex-row
         w-full
-        justify-around
-        transform
+        lg:justify-around lg:transform
         w-full
-        -translate-y-1/2 -translate-x-1/2
+        lg:-translate-y-1/2 lg:-translate-x-1/2
+        z-10
+        text-right
+        lg:text-center
+        space-y-4
+        lg:space-y-0
       "
     >
       <span v-for="keyword of keywords" :key="keyword" class="title-sm">{{

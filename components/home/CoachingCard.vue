@@ -3,7 +3,7 @@
     <div class="container px-4 mx-auto lg:max-w-5xl">
       <h2 class="title mb-4" data-title-prefix="/Coaching">Characters</h2>
 
-      <div class="grid grid-cols-5 gap-4 items-center mt-8">
+      <div class="grid lg:grid-cols-5 gap-4 items-center mt-8">
         <div class="col-span-2 relative">
           <img
             class="
@@ -12,7 +12,8 @@
               left-0
               transform
               -translate-x-2 -translate-y-4
-              w-full w-5/6
+              w-full
+              lg:w-5/6
             "
             :src="
               $cloudinary.image.url('sebastian-schaedler/logo_white_oh36fm', {
@@ -34,7 +35,7 @@
             alt="Coaching"
           />
         </div>
-        <div class="relative col-span-3 space-y-8 pl-16">
+        <div class="relative lg:col-span-3 space-y-8 lg:pl-16">
           <svg
             class="absolute top-0 left-0 w-32 h-auto text-white text-opacity-10"
             fill="currentColor"

@@ -1,8 +1,8 @@
 <template>
   <section class="relative">
     <div class="container px-4 mx-auto lg:max-w-5xl">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="space-y-8">
+      <div class="grid lg:grid-cols-2 gap-4 lg:gap-8">
+        <div class="space-y-4 lg:space-y-8">
           <h2 class="title" data-title-prefix="/about">Sebastian</h2>
           <div>
             <p class="mb-2">
@@ -22,7 +22,7 @@
           </div>
           <TheButton to="about"> Mehr erfahren </TheButton>
         </div>
-        <div>
+        <div class="order-first lg:order-none">
           <img
             class="w-full"
             :src="

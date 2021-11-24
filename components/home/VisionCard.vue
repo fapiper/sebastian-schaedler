@@ -1,10 +1,15 @@
 <template>
   <section class="relative overflow-hidden pb-16 -mb-16">
     <div class="container px-4 mx-auto lg:max-w-5xl">
-      <h2 class="title mb-8" data-title-prefix="/Business">& Vision</h2>
+      <h2
+        class="title mb-8 text-right lg:text-left"
+        data-title-prefix="/Business"
+      >
+        & Vision
+      </h2>
 
-      <div class="grid grid-cols-7 gap-4 lg:gap-8 items-center">
-        <div class="col-span-2 relative">
+      <div class="grid lg:grid-cols-7 gap-8 items-center">
+        <div class="lg:col-span-2 relative">
           <img
             class="
               absolute
@@ -25,7 +30,7 @@
           />
 
           <img
-            class="w-full"
+            class="w-54 lg:max-w-unset ml-auto lg:ml-0"
             :src="
               $cloudinary.image.url('sebastian-schaedler/DSC09888_qzm8jn', {
                 width: '450',
@@ -35,7 +40,16 @@
             alt="Vision"
           />
         </div>
-        <div class="col-span-4 relative pr-12">
+        <div
+          class="
+            order-first
+            lg:order-none lg:col-span-4
+            text-right
+            lg:text-left
+            relative
+            lg:pr-12
+          "
+        >
           <img
             class="absolute top-0 right-0 w-full max-w-md opacity-10"
             :src="

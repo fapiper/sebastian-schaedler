@@ -68,7 +68,7 @@
           class="
             absolute
             top-0
-            lg:top-unset lg:bottom-0
+            lg:top-auto lg:bottom-0
             right-0
             p-4
             flex

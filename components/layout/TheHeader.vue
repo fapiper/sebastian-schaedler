@@ -4,22 +4,9 @@
       ref="navbar"
       class="fixed top-0 left-0 w-full z-40 bg-transparent lg:bg-blue"
     >
-      <div class="container px-4 lg:max-w-5xl mx-auto flex">
-        <ul
-          class="
-            hidden
-            lg:visible
-            w-full
-            flex
-            h-20
-            items-center
-            space-x-8
-            uppercase
-            font-light
-            text-sm
-          "
-        >
-          <li class="w-3 block bg-yellow h-full"></li>
+      <div class="container px-4 lg:max-w-5xl mx-auto flex items-center h-20">
+        <ul class="hidden w-full lg:flex items-center space-x-8">
+          <li class="w-3 block bg-yellow h-20"></li>
           <li>
             <NuxtLink to="/">Startseite</NuxtLink>
           </li>
@@ -55,7 +42,11 @@
           </li>
         </ul>
         <button class="menu-button">
-          <span></span>
+          <div class="menu-button__inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </button>
       </div>
     </nav>
@@ -85,24 +76,26 @@ export default {
 
 <style lang="postcss">
 .menu-button {
-  @apply relative h-16 w-16 ml-auto;
+  @apply h-9 w-9 ml-auto flex items-center justify-center lg:hidden;
 }
 
-.menu-button span,
-.menu-button span:before,
-.menu-button span:after {
-  @apply absolute h-px w-full;
+.menu-button__inner {
+  @apply relative h-5 w-8;
 }
 
 .menu-button span {
+  @apply absolute block h-px w-full bg-white left-0;
+}
+
+.menu-button span:nth-child(2) {
   @apply top-1/2 transform -translate-y-1/2;
 }
 
-.menu-button span:before {
+.menu-button span:nth-child(1) {
   @apply top-0;
 }
 
-.menu-button span:after {
+.menu-button span:nth-child(3) {
   @apply bottom-0;
 }
 </style>

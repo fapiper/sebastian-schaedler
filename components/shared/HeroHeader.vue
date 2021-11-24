@@ -57,7 +57,7 @@
           </li>
         </ul>
         <img
-          class="absolute bottom-4 left-4 w-56"
+          class="absolute bottom-0 left-4 transform translate-y-16 w-80"
           :src="
             $cloudinary.image.url('sebastian-schaedler/logo_fkcnoj', {
               width: '450',

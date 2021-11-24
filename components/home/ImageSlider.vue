@@ -45,7 +45,11 @@ export default {
         trigger: this.$refs.imageSlider,
         start: 'top bottom',
         end: 'bottom top',
-        onUpdate: (self) => this.imageSlider.setProgress(self.progress, 500),
+        onUpdate: (self) =>
+          this.imageSlider.setProgress(
+            (Math.round(self.progress * 100) / 100) * 0.33,
+            750
+          ),
       },
     })
   },

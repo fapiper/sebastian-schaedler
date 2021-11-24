@@ -19,9 +19,10 @@ export default {
   components: [
     '~/components/home/',
     '~/components/about/',
+    '~/components/podcast/',
     '~/components/contact/',
     '~/components/shared/',
-    '~/components/shared/social',
+    '~/components/shared/icons',
     '~/components/layout/',
   ],
 

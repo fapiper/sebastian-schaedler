@@ -5,6 +5,7 @@
         <h2 class="title" data-title-prefix="/Kontaktiere">mich</h2>
         <p>Ich werde mich innerhalb von 24 Stunden bei dir melden.</p>
       </div>
+
       <form @submit.prevent="submit">
         <div
           v-if="overlayActive"
@@ -66,8 +67,10 @@
                 sm:space-y-0 sm:space-x-4
               "
             >
-              <button @click="tryAgain">Erneut Versuchen</button>
-              <button href="mailto:info@nxtyou.de">Email Schreiben</button>
+              <TheButton @click="tryAgain">Erneut Versuchen</TheButton>
+              <TheButton href="mailto:info@nxtyou.de"
+                >Email Schreiben</TheButton
+              >
             </div>
           </div>
           <div v-else class="space-y-4">
@@ -96,11 +99,11 @@
                 sm:space-y-0 sm:space-x-4
               "
             >
-              <button @click="navigateBack">Zurück</button>
+              <TheButton @click="navigateBack">Zurück</TheButton>
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div class="form-group">
             <label
               for="firstName"
@@ -232,9 +235,25 @@
             </ul>
           </div>
         </div>
-
-        <div>
-          <button type="submit">Abschicken</button>
+        <div class="mt-4 inline-block space-y-2">
+          <TheButton type="submit">Jetzt Abschicken!</TheButton>
+          <div class="flex justify-center items-center space-x-1 text-xs">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-3 w-3 text-yellow"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+              />
+            </svg>
+            <span>Deine Daten sind sicher</span>
+          </div>
         </div>
       </form>
     </div>

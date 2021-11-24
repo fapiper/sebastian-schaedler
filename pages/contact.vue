@@ -4,7 +4,7 @@
       title="Kontakt"
       subtitle="Sebastian Schädler"
       description="Ich freue mich über "
-      public-id="sebastian-schaedler/sebastianschaedler_wl73lh"
+      public-id="sebastian-schaedler/DSC09888_qzm8jn"
       alt="Sebastian Schädler - Kontakt"
     />
     <ContactForm />

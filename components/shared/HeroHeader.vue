@@ -28,7 +28,7 @@
         <h1
           class="
             inline
-            text-6xl
+            text-5xl
             lg:text-7xl
             tracking-wide
             uppercase
@@ -42,7 +42,17 @@
         <p>{{ description }}</p>
       </div>
       <div
-        class="relative top-0 left-0 w-full h-full flex mt-20 lg:mt-0 lg:pl-20"
+        class="
+          relative
+          top-0
+          -right-4
+          lg:right-0
+          w-full
+          h-full
+          flex
+          mt-20
+          lg:mt-0 lg:pl-20
+        "
       >
         <img
           class="h-full w-full object-cover"
@@ -83,7 +93,9 @@
             bottom-0
             left-0
             transform
-            translate-x-4 translate-y-16
+            -translate-x-8
+            lg:translate-x-4
+            translate-y-16
             w-80
           "
           :src="

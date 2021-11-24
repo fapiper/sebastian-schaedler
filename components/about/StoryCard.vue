@@ -1,11 +1,13 @@
 <template>
   <section class="relative">
     <div class="container px-4 mx-auto lg:max-w-5xl">
-      <div class="grid grid-cols-2 gap-4 lg:gap-8 items-start justify-center">
-        <div class="lg:w-4/5 mx-auto">
+      <div
+        class="grid lg:grid-cols-2 gap-4 lg:gap-8 items-start justify-center"
+      >
+        <div class="w-4/5 mx-auto">
           <div class="relative">
             <img
-              class="absolute top-0 left-0 transform -translate-x-2/3 w-32"
+              class="absolute top-0 left-0 transform -translate-x-2/3 w-28"
               :src="
                 $cloudinary.image.url('sebastian-schaedler/logo_white_oh36fm', {
                   width: '250',

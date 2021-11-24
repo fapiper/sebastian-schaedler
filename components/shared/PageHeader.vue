@@ -6,7 +6,7 @@
       <h1 class="page-header-title">
         {{ title }}
       </h1>
-      <div class="relative max-w-lg z-20">
+      <div class="relative w-full max-w-lg z-20">
         <span class="inline-block w-full h-3 bg-yellow my-4"></span>
         <div class="space-y-2 text-center">
           <h2 class="font-semibold text-lg">

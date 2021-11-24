@@ -351,6 +351,10 @@ textarea {
   @apply w-full bg-transparent border-white text-current focus:placeholder-yellow focus:border-yellow;
 }
 
+textarea {
+  min-height: 8rem;
+}
+
 input,
 input::placeholder {
   @apply transition-all ease-in-out duration-200;

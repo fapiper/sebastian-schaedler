@@ -12,13 +12,14 @@ section {
 
 .bg-text {
   @apply text-center inline-block text-50-screen sm:text-20-screen uppercase font-bold whitespace-nowrap;
+  line-height: 1em;
   -webkit-text-fill-color: theme('colors.blue.DEFAULT');
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: theme('colors.yellow.DEFAULT');
 }
 
 .bg-text--dense {
-  @apply text-50-screen sm:text-10-screen !important;
+  @apply text-50-screen sm:text-14-screen lg:text-10-screen !important;
 }
 
 .title {

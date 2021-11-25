@@ -15,7 +15,7 @@
       <span
         v-for="(keyword, index) of keywords"
         :key="index"
-        class="bg-text !text-10-screen"
+        class="bg-text bg-text--dense"
         >{{ keyword }} {{ index !== keyword.length - 1 ? '-' : '' }}</span
       >
     </div>
@@ -56,7 +56,7 @@ export default {
   },
   mounted() {
     this.$gsap.to(this.$refs.banner, {
-      xPercent: -40,
+      xPercent: -10,
       scrollTrigger: {
         trigger: this.$refs.banner,
         start: 'top bottom',

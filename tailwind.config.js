@@ -28,6 +28,7 @@ module.exports = {
       margin: {
         '-1-screen': '-1vw',
         '-2-screen': '-2vw',
+        '-4-screen': '-4vw',
         '-6-screen': '-6vw',
         '-9-screen': '-9vw',
         '-12-screen': '-12vw',

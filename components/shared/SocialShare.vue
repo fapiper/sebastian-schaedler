@@ -9,11 +9,10 @@
         text-yellow
         overflow-hidden
         w-full
-        -mt-12-screen
-        -mb-22-screen
-        sm:-mt-6-screen sm:-mb-9-screen
+        -mb-9-screen
+        sm:-mb-4-screen
       "
-      :class="{ 'mb-0 -mt-6-screen !sm:mt-0 !lg:-my-0-screen': dense }"
+      :class="{ '!mb-0': dense }"
     >
       <span
         ref="banner"
@@ -90,7 +89,7 @@ export default {
   mounted() {
     if (this.dense) {
       this.$gsap.to(this.$refs.banner, {
-        xPercent: -40,
+        xPercent: -10,
         scrollTrigger: {
           trigger: this.$refs.banner,
           start: 'top bottom',

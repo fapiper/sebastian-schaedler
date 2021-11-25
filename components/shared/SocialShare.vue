@@ -4,8 +4,16 @@
       <h2 class="relative title-sm text-center z-10">Social Media</h2>
     </div>
     <div
-      class="relative text-yellow overflow-hidden w-full lg:-mt-16 lg:-mb-32"
-      :class="{ '!my-4 !lg:-my-8': dense }"
+      class="
+        relative
+        text-yellow
+        overflow-hidden
+        w-full
+        -mt-12-screen
+        -mb-22-screen
+        sm:-mt-6-screen sm:-mb-9-screen
+      "
+      :class="{ 'mb-0 -mt-6-screen !sm:mt-0 !lg:-my-0-screen': dense }"
     >
       <span
         ref="banner"
@@ -18,8 +26,8 @@
           text-center
           select-none
         "
-        :class="{ '!text-10-screen': dense }"
-        >Sebastian Schädler Sebastian Schädler</span
+        :class="{ 'bg-text--dense': dense }"
+        >Sebastian Schädler Sebastian Schädler Sebastian Schädler</span
       >
       <div
         class="
@@ -34,7 +42,16 @@
           lg:max-w-5xl
         "
       >
-        <ul class="flex items-center justify-center space-x-8 text-yellow">
+        <ul
+          class="
+            flex
+            items-center
+            justify-center
+            space-x-4
+            lg:space-x-8
+            text-yellow
+          "
+        >
           <li>
             <Instagram class="!w-12 !h-12 bg-blue border-yellow"></Instagram>
           </li>

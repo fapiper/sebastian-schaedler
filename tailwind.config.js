@@ -11,6 +11,7 @@ module.exports = {
         '10-screen': '10vw',
         '14-screen': '14vw',
         '20-screen': '20vw',
+        '50-screen': '50vw',
       },
       colors: {
         blue: { light: '#1E3143', DEFAULT: '#1E3143', dark: '#1F2B36' },
@@ -23,6 +24,14 @@ module.exports = {
       },
       maxWidth: {
         unset: 'unset',
+      },
+      margin: {
+        '-1-screen': '-1vw',
+        '-2-screen': '-2vw',
+        '-6-screen': '-6vw',
+        '-9-screen': '-9vw',
+        '-12-screen': '-12vw',
+        '-22-screen': '-22vw',
       },
       height: {
         84: '21rem',

@@ -16,17 +16,9 @@
     >
       <span
         ref="banner"
-        class="
-          relative
-          left-1/2
-          bg-text
-          transform
-          -translate-x-1/2
-          text-center
-          select-none
-        "
+        class="block relative bg-text transform text-center select-none"
         :class="{ 'bg-text--dense': dense }"
-        >Sebastian Schädler Sebastian Schädler Sebastian Schädler</span
+        >Sebastian Schädler Sebastian Schädler</span
       >
       <div
         class="

@@ -56,7 +56,7 @@ export default {
   },
   mounted() {
     this.$gsap.to(this.$refs.banner, {
-      xPercent: -10,
+      xPercent: -40,
       scrollTrigger: {
         trigger: this.$refs.banner,
         start: 'top bottom',

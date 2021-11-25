@@ -16,6 +16,17 @@ module.exports = {
         blue: { light: '#1E3143', DEFAULT: '#1E3143', dark: '#1F2B36' },
         yellow: { DEFAULT: '#CDA000' },
       },
+      width: {
+        'full-4': 'calc(100% + 1rem)',
+        'full-8': 'calc(100% + 2rem)',
+        'full-16': 'calc(100% + 4rem)',
+      },
+      maxWidth: {
+        auto: 'auto',
+      },
+      height: {
+        84: '21rem',
+      },
       zIndex: {
         '-10': '-10',
         60: '60',

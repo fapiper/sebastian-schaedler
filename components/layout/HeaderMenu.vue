@@ -19,7 +19,7 @@
       "
     >
       <div class="h-20 flex-auto w-full"></div>
-      <div class="p-4 pt-20 flex-auto h-full overflow-auto">
+      <div class="p-4 pt-20 flex-auto h-full overflow-auto flex flex-col">
         <ul class="w-full flex flex-col space-y-4 text-3xl text-right">
           <li>
             <NuxtLink to="/">Startseite</NuxtLink>
@@ -40,36 +40,34 @@
             <NuxtLink to="/contact">Kontakt</NuxtLink>
           </li>
         </ul>
+        <ul
+          class="
+            flex flex-col
+            justify-end
+            flex-1
+            mt-auto
+            space-y-1
+            text-right
+            pt-4
+          "
+        >
+          <li>
+            <a href="/" target="_blank" rel="noreferrer noopener">Instagram</a>
+          </li>
+          <li>
+            <a href="/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          </li>
+          <li>
+            <a href="/" target="_blank" rel="noreferrer noopener">YouTube</a>
+          </li>
+        </ul>
       </div>
-      <ul
-        class="
-          flex flex-1
-          w-full
-          items-center
-          justify-end
-          space-x-4
-          mt-auto
-          text-black
-          p-4
-          border-t border-gray-400
-          js-icons
-        "
-      >
+      <ul class="flex-1 w-full text-right text-xs space-y-1 mt-auto p-4">
         <li>
-          <Instagram class="!w-8 !h-8 border-0"></Instagram>
+          Copyright <Copyright class="inline-block w-4 h-4 mb-0.5" /> 2021
+          NXTYOU
         </li>
-        <li>
-          <Linkedin class="!w-8 !h-8 border-0"></Linkedin>
-        </li>
-        <li>
-          <Facebook class="!w-8 !h-8 border-0"></Facebook>
-        </li>
-        <li>
-          <Podcast class="!w-8 !h-8 border-0"></Podcast>
-        </li>
-        <li>
-          <Youtube class="!w-8 !h-8 !p-1 border-0"></Youtube>
-        </li>
+        <li>Impressum / Datenschutzerklärung</li>
       </ul>
     </div>
   </transition>

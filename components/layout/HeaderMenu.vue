@@ -62,10 +62,11 @@
           </li>
         </ul>
       </div>
-      <ul class="flex-1 w-full text-right text-xs space-y-1 mt-auto p-4">
+      <ul class="flex-1 w-full text-right text-xs mt-auto p-4">
         <li>
-          Copyright <Copyright class="inline-block w-4 h-4 mb-0.5" /> 2021
-          NXTYOU
+          Copyright <Copyright class="inline-block w-4 h-4 mb-0.5" />
+          {{ new Date().getFullYear() }}
+          Sebastian Schädler
         </li>
         <li>Impressum / Datenschutzerklärung</li>
       </ul>

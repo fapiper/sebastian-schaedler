@@ -25,10 +25,10 @@
               <NuxtLink to="/about">About</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">Business</NuxtLink>
+              <NuxtLink to="/#business-and-vision">Business</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/coaching">Coaching</NuxtLink>
+              <NuxtLink to="/#coaching-character">Coaching</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/podcast">Podcast</NuxtLink>

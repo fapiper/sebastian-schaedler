@@ -1,5 +1,5 @@
 <template>
-  <section class="relative">
+  <section id="coaching-character" class="relative">
     <div class="container px-4 mx-auto lg:max-w-5xl">
       <h2 class="title mb-4" data-title-prefix="/Coaching">Characters</h2>
 

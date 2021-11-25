@@ -23,12 +23,22 @@ export default {
   data() {
     return {
       options: {
-        slidesPerView: 5,
+        slidesPerView: 2,
         spaceBetween: 16,
         loop: true,
+        centeredSlides: true,
         freeMode: {
           enabled: true,
           sticky: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+            centeredSlides: false,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
         },
       },
       imageIds: [
@@ -45,11 +55,10 @@ export default {
         trigger: this.$refs.imageSlider,
         start: 'top bottom',
         end: 'bottom top',
-        onUpdate: (self) =>
-          this.imageSlider.setProgress(
-            (Math.round(self.progress * 100) / 100) * 0.33,
-            750
-          ),
+        onUpdate: (self) => {
+          const progress = Math.round(self.progress * 100) / 100
+          this.imageSlider.setProgress(progress * 0.33, 750)
+        },
       },
     })
   },

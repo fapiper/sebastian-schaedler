@@ -1,5 +1,5 @@
 <template>
-  <header class="container px-4 mx-auto max-w-5xl">
+  <header class="container px-4 mx-auto max-w-5xl overflow-hidden">
     <div class="relative lg:min-h-screen pt-20">
       <span class="block absolute top-0 left-0 w-3 h-84 bg-yellow z-40"></span>
       <img
@@ -9,7 +9,7 @@
           lg:top-1/2 lg:transform lg:-translate-y-1/2
           -right-4
           w-full-8
-          max-w-auto
+          max-w-unset
           h-96
           lg:right-0 lg:w-3/4
           z-10
@@ -24,7 +24,7 @@
         :alt="alt"
       />
 
-      <div class="relative w-full max-w-sm lg:max-w-lg text-center mt-64">
+      <div class="relative w-full max-w-lg text-center mt-64">
         <span class="page-header-title page-header-title--line">{{
           title
         }}</span>

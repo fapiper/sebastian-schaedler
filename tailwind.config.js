@@ -22,7 +22,7 @@ module.exports = {
         'full-16': 'calc(100% + 4rem)',
       },
       maxWidth: {
-        auto: 'auto',
+        unset: 'unset',
       },
       height: {
         84: '21rem',

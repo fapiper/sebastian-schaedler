@@ -112,7 +112,11 @@
           </ul>
         </div>
         <ul class="w-full border-t py-4 lg:py-8 mt-8 text-xs">
-          <li>Copyright (c) 2021 Sebastian Schädler</li>
+          <li>
+            Copyright <Copyright class="inline-block w-4 h-4 mb-0.5" />
+            {{ new Date().getFullYear() }}
+            Sebastian Schädler
+          </li>
           <li>Design by NXT YOU</li>
         </ul>
       </div>

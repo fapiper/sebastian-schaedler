@@ -1,5 +1,8 @@
 <template>
-  <section class="relative overflow-hidden pb-16 -mb-16">
+  <section
+    id="business-and-vision"
+    class="relative overflow-hidden pb-16 -mb-16"
+  >
     <div class="container px-4 mx-auto lg:max-w-5xl">
       <h2
         class="title mb-8 text-right lg:text-left"
@@ -30,7 +33,7 @@
           />
 
           <img
-            class="w-54 lg:max-w-unset ml-auto lg:ml-0"
+            class="w-54 ml-auto lg:ml-0"
             :src="
               $cloudinary.image.url('sebastian-schaedler/DSC09888_qzm8jn', {
                 width: '450',

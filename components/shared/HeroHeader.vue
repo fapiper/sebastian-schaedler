@@ -47,7 +47,8 @@
           top-0
           -right-4
           lg:right-0
-          w-full
+          w-full-8
+          lg:w-full
           h-full
           flex
           mt-20

@@ -2,11 +2,24 @@
   <section>
     <div class="container px-4 mx-auto lg:max-w-5xl">
       <div class="mb-4">
-        <h2 class="title" data-title-prefix="/Kontaktiere">mich</h2>
-        <p>Ich werde mich innerhalb von 24 Stunden bei dir melden.</p>
+        <PrefixTitle
+          class="mb-4"
+          prefix="Kontaktiere"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          >mich</PrefixTitle
+        >
+
+        <p data-aos="fade-up" data-aos-duration="1000">
+          Ich werde mich innerhalb von 24 Stunden bei dir melden.
+        </p>
       </div>
 
-      <form @submit.prevent="submit">
+      <form
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        @submit.prevent="submit"
+      >
         <div
           v-if="overlayActive"
           class="

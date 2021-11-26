@@ -14,7 +14,11 @@ export default {
 
   css: [],
 
-  plugins: ['~/plugins/vue-awesome-swiper.client.js', '~/plugins/vuelidate.js'],
+  plugins: [
+    '~/plugins/vue-awesome-swiper.client.js',
+    '~/plugins/vuelidate.js',
+    '~/plugins/aos.client.js',
+  ],
 
   components: [
     '~/components/home/',

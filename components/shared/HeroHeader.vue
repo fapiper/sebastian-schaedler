@@ -131,6 +131,12 @@ export default {
       required: true,
     },
   },
+  mounted() {
+    this.$nuxt.$on('page-transition-after', this.animate.bind(this))
+  },
+  methods: {
+    animate() {},
+  },
 }
 </script>
 

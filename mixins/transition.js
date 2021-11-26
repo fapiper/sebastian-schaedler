@@ -14,12 +14,11 @@ export default {
         autoAlpha: 0,
         y: 40,
       })
-      .to('[data-transition-bg]', { height: 0 }, 0.4)
-      .to('[data-transition-logo]', { autoAlpha: 0, y: -450 }, 0)
+      .to('[data-transition-bg]', { height: 0 }, 0.6)
+      .to('[data-transition-logo]', { y: -450 }, 0)
       .to(
         '[data-transition-layout]',
         {
-          autoAlpha: 1,
           y: 0,
         },
         1.1

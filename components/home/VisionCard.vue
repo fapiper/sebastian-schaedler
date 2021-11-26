@@ -4,12 +4,7 @@
     class="relative overflow-hidden pb-16 -mb-16"
   >
     <div class="container px-4 mx-auto lg:max-w-5xl">
-      <h2
-        class="title mb-8 text-right lg:text-left"
-        data-title-prefix="/Business"
-      >
-        & Vision
-      </h2>
+      <PrefixTitle prefix="Business" class="mb-8"> & Vision </PrefixTitle>
 
       <div class="grid lg:grid-cols-7 gap-8 items-center">
         <div class="lg:col-span-2 relative">
@@ -33,6 +28,8 @@
           />
 
           <img
+            data-aos="fade"
+            data-aos-duration="1100"
             class="w-54 ml-auto lg:ml-0"
             :src="
               $cloudinary.image.url('sebastian-schaedler/DSC09888_qzm8jn', {
@@ -65,10 +62,14 @@
           />
           <div class="relative space-y-8 z-10">
             <div>
-              <h3 class="text-2xl uppercase leading-normal text-yellow">
+              <h3
+                class="text-2xl uppercase leading-normal text-yellow"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 Network
               </h3>
-              <p>
+              <p data-aos="fade-up" data-aos-duration="800">
                 Als Franchise-Entrepreneur, Online-Marketer und Networker gründe
                 ich jeden Tag neue Start-Ups und halte lebenslang prozentuale
                 Beteiligungen an deren Erfolg. Mir macht es Spaß, neue
@@ -77,10 +78,14 @@
               </p>
             </div>
             <div>
-              <h3 class="text-2xl uppercase leading-normal text-yellow">
+              <h3
+                class="text-2xl uppercase leading-normal text-yellow"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 Vision & Mission
               </h3>
-              <p>
+              <p data-aos="fade-up" data-aos-duration="800">
                 Ich möchte Menschen inspirieren, größer zu denken und
                 selbstbewusster zu handeln. Ich verstehe mich als Impulsgeber
                 zur mentalen & körperlichen Gesundheit, als Inspiration in
@@ -92,7 +97,9 @@
               </p>
             </div>
 
-            <TheButton to="contact">Lass uns zusammenarbeiten</TheButton>
+            <TheButton data-aos="fade-up" data-aos-duration="800" to="contact"
+              >Lass uns zusammenarbeiten</TheButton
+            >
           </div>
         </div>
         <div class="relative h-full">
@@ -132,7 +139,7 @@ export default {
         trigger: this.$refs.logo,
         start: 'top bottom',
         end: 'bottom top',
-        scrub: 0.25,
+        scrub: 0.05,
       },
     })
   },

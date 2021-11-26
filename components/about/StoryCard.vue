@@ -14,11 +14,13 @@
                   crop: 'scale',
                 })
               "
-              alt="Story of my Life"
+              alt="Story of my Life Logo"
             />
 
             <img
               class="w-full"
+              data-aos="fade"
+              data-aos-duration="1100"
               :src="
                 $cloudinary.image.url('sebastian-schaedler/DSC00892_w2zbiy', {
                   width: '450',
@@ -30,8 +32,13 @@
           </div>
         </div>
         <div class="space-y-8">
-          <h2 class="title" data-title-prefix="/Story">of my Life</h2>
-          <div class="space-y-4">
+          <PrefixTitle
+            prefix="Story"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            >of my Life</PrefixTitle
+          >
+          <div class="space-y-4" data-aos="fade-up" data-aos-duration="1000">
             <p>
               Stell dir vor, du führst ein erfülltes Leben, dir wird alles
               geboten und innerhalb von einer Sekunde ändert sich alles. Alle
@@ -92,7 +99,11 @@
               <p>Networker. PQS-Coach. Torwarttrainer.</p>
             </template>
           </div>
-          <button class="flex flex-1 space-x-2 items-center mx-auto">
+          <button
+            class="flex flex-1 space-x-2 items-center mx-auto"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6 text-yellow"

@@ -40,9 +40,15 @@
         lg:space-y-0
       "
     >
-      <span v-for="keyword of keywords" :key="keyword" class="title-sm">{{
-        keyword
-      }}</span>
+      <span
+        v-for="(keyword, index) of keywords"
+        :key="keyword"
+        class="title-sm"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        :data-aos-delay="index * 100"
+        >{{ keyword }}</span
+      >
     </div>
   </section>
 </template>

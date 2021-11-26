@@ -29,7 +29,7 @@
         "
       >
         <img
-          class="w-40 animate-spin-slow"
+          class="w-40 animate-spin"
           :src="
             $cloudinary.image.url('sebastian-schaedler/logo_black_oxulrm', {
               width: '450',

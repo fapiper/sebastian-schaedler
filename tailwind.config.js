@@ -46,7 +46,8 @@ module.exports = {
         100: '100',
       },
       animation: {
-        'spin-slow': 'spin 4s linear infinite',
+        spin: 'spin 6s linear infinite',
+        'spin-slow': 'spin 28s linear infinite',
       },
     },
   },

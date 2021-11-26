@@ -1,7 +1,13 @@
 <template>
   <section class="overflow-hidden">
     <div class="container px-4 mx-auto lg:max-w-6xl">
-      <h2 class="relative title-sm text-center z-10">Social Media</h2>
+      <h2
+        class="relative title-sm text-center z-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Social Media
+      </h2>
     </div>
     <div
       class="
@@ -44,23 +50,41 @@
           "
         >
           <li>
-            <Instagram class="!w-12 !h-12 bg-blue border-yellow"></Instagram>
+            <Instagram
+              class="!w-12 !h-12 bg-blue border-yellow"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></Instagram>
           </li>
           <li>
             <Linkedin
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
               class="!w-12 !h-12 !border-4 !p-2 bg-blue border-yellow"
             ></Linkedin>
           </li>
           <li>
             <Facebook
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
               class="!w-12 !h-12 !border-4 !p-1.5 bg-blue border-yellow"
             ></Facebook>
           </li>
           <li>
-            <Podcast class="!w-12 !h-12 bg-blue border-yellow"></Podcast>
+            <Podcast
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              class="!w-12 !h-12 bg-blue border-yellow"
+            ></Podcast>
           </li>
           <li>
             <Youtube
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
               class="!w-12 !h-12 !border-4 !p-1.5 bg-blue border-yellow"
             ></Youtube>
           </li>

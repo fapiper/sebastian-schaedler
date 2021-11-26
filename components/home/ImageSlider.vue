@@ -25,7 +25,6 @@ export default {
       options: {
         slidesPerView: 2,
         spaceBetween: 16,
-        loop: true,
         centeredSlides: true,
         freeMode: {
           enabled: true,

@@ -1,6 +1,6 @@
 <template>
-  <component :is="tag" class="title">
-    <span class="text-yellow">/{{ prefix }}&nbsp;</span><slot></slot>
+  <component :is="tag" class="title max-w-full overflow-hidden">
+    <span class="text-yellow">/{{ prefix }}</span> <slot></slot>
   </component>
 </template>
 

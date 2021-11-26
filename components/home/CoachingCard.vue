@@ -17,14 +17,14 @@
               top-0
               left-0
               transform
-              scale-110
+              !scale-110
               w-4/5
               mix-blend-exclusion
               z-10
             "
+            data-aos="zoom-in"
           >
             <img
-              data-aos="zoom-in"
               class="animate-spin-slow"
               :src="
                 $cloudinary.image.url('sebastian-schaedler/logo_white_oh36fm', {

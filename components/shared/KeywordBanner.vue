@@ -1,23 +1,22 @@
 <template>
   <section class="relative w-full overflow-hidden">
     <div
-      ref="banner"
       class="
         absolute
         top-1/2
         lg:top-unset
         -translate-y-1/2
         lg:translate-y-0 lg:relative
-        flex
-        text-center
       "
     >
-      <span
-        v-for="(keyword, index) of keywords"
-        :key="index"
-        class="bg-text bg-text--dense"
-        >{{ keyword }} {{ index !== keyword.length - 1 ? '-' : '' }}</span
-      >
+      <div ref="banner" class="flex text-center">
+        <span
+          v-for="(keyword, index) of keywords"
+          :key="index"
+          class="bg-text bg-text--dense"
+          >{{ keyword }} {{ index !== keyword.length - 1 ? '-' : '' }}</span
+        >
+      </div>
     </div>
 
     <div
@@ -26,7 +25,7 @@
         lg:absolute lg:top-1/2 lg:left-1/2
         container
         px-4
-        max-w-6xl
+        max-w-5xl
         flex flex-col
         lg:flex-row
         w-full

@@ -44,6 +44,7 @@ export default {
         'sebastian-schaedler/DSC09965-2_lqii0x',
         'sebastian-schaedler/DSC00963-2_wxj4rx',
         'sebastian-schaedler/DSC00892_w2zbiy',
+        'sebastian-schaedler/DSC03207-3_eq2hsd',
         'sebastian-schaedler/DSC09848-4_c9vsgk',
       ],
     }

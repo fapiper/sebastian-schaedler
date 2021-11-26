@@ -18,6 +18,7 @@ export default {
     '~/plugins/vue-awesome-swiper.client.js',
     '~/plugins/vuelidate.js',
     '~/plugins/aos.client.js',
+    '~/plugins/vue-vimeo-player.client.js',
   ],
 
   components: [

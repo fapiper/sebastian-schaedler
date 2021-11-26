@@ -15,7 +15,7 @@ export default {
         y: 40,
       })
       .to('[data-transition-bg]', { height: 0 }, 0.6)
-      .to('[data-transition-logo]', { y: -450 }, 0)
+      .to('[data-transition-logo]', { y: -450, autoAlpha: 0 }, 0)
       .to(
         '[data-transition-layout]',
         {

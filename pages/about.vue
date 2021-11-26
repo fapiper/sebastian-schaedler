@@ -7,6 +7,7 @@
       public-id="sebastian-schaedler/sebastianschaedler_wl73lh"
       alt="Sebastian Schädler - About"
     />
+    <KeywordBanner />
     <StoryCard />
     <ValueList />
   </div>

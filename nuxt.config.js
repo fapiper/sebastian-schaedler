@@ -9,7 +9,21 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      /*
+      {
+        type: 'text/javascript',
+        src: 'https://fast.wistia.com/embed/medias/asf228uz6d.jsonp',
+        async: true,
+      },
+      {
+        type: 'text/javascript',
+        src: 'https://fast.wistia.com/assets/external/E-v1.js',
+        async: true,
+      },
+*/
+    ],
   },
 
   css: [],
@@ -18,7 +32,6 @@ export default {
     '~/plugins/vue-awesome-swiper.client.js',
     '~/plugins/vuelidate.js',
     '~/plugins/aos.client.js',
-    '~/plugins/vue-vimeo-player.client.js',
   ],
 
   components: [

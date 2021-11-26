@@ -1,24 +1,35 @@
 <template>
   <transition :css="false" @enter="enter" @leave="leave">
-    <div v-show="active" class="modals" @click="toggleModal(false)">
-      <div ref="modalOverlay" class="modals__overlay"></div>
-      <div ref="videoModal" class="ak-video-modal" @click.stop="">
-        <div class="ak-video-modal__header">
-          <button
-            class="ak-video-modal__header__close"
-            @click="toggleModal(false)"
-          >
+    <div
+      v-show="active"
+      class="fixed top-0 left-0 w-full h-screen z-80"
+      @click="toggle(false)"
+    >
+      <div
+        ref="modalOverlay"
+        class="absolute top-0 left-0 w-full h-screen bg-black bg-opacity-75"
+      ></div>
+      <div
+        ref="videoModal"
+        class="
+          fixed
+          top-1/2
+          left-1/2
+          transform
+          -translate-x-1/2 -translate-y-1/2
+          p-4
+          w-full
+          max-w-md
+          lg:max-w-2xl lg:max-w-5xl
+        "
+        @click.stop=""
+      >
+        <div class="w-full flex pb-4">
+          <button class="relative w-8 h-8 ml-auto close" @click="toggle(false)">
             <span></span> <span></span>
           </button>
         </div>
-        <TheVideo
-          v-if="vimeoId !== ''"
-          ref="video"
-          class="ak-video-modal__video"
-          :vimeo-id="vimeoId"
-          controls="vimeo"
-          responsive
-        ></TheVideo>
+        <div ref="video" class="w-full bg-shadow-lg bg-black"></div>
       </div>
     </div>
   </transition>
@@ -33,14 +44,18 @@ export default {
       tl: null,
       active: false,
       vimeoId: '',
+      videoOptions: {
+        muted: null,
+        autoplay: null,
+        responsive: null,
+        loop: true,
+        controls: false,
+        dnt: true,
+        color: '16427d',
+      },
     }
   },
   mounted() {
-    this.$nuxt.$on('toggle-video-modal', ({ active, vimeoId }) => {
-      console.log('toggle-video-modal', active, vimeoId)
-      this.toggleModal(active, vimeoId)
-    })
-
     this.tl = this.$gsap
       .timeline({ paused: true })
       .fromTo(
@@ -62,7 +77,7 @@ export default {
       )
   },
   methods: {
-    toggleModal(active, vimeoId) {
+    toggle(active, vimeoId) {
       if (active) this.vimeoId = vimeoId
       else this.$refs.video.pause()
       this.active = active
@@ -80,39 +95,17 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.modals {
-  @apply fixed top-0 left-0 w-full h-screen z-80;
-}
-
-.modals__overlay {
-  @apply absolute top-0 left-0 w-full h-screen bg-black bg-opacity-75;
-}
-
-.ak-video-modal {
-  @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 w-full max-w-md lg:max-w-2xl lg:max-w-5xl;
-}
-.ak-video-modal__header {
-  @apply w-full flex pb-4;
-}
-.ak-video-modal__header__close {
-  @apply relative w-8 h-8 ml-auto;
-}
-
-.ak-video-modal__header__close span {
+.close span {
   @apply absolute top-1/2 left-0 block w-full bg-white;
   height: 0.15rem;
   margin-top: -0.0875rem;
 }
 
-.ak-video-modal__header__close span:nth-child(1) {
+.close span:nth-child(1) {
   @apply transform rotate-45;
 }
 
-.ak-video-modal__header__close span:nth-child(2) {
+.close span:nth-child(2) {
   @apply transform -rotate-45;
-}
-
-.ak-video-modal____video {
-  @apply w-full bg-shadow-lg bg-black;
 }
 </style>

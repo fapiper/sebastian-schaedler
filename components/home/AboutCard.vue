@@ -30,21 +30,39 @@
           </TheButton>
         </div>
         <div class="order-first lg:order-none">
-          <img
-            data-aos="fade"
-            data-aos-duration="1100"
-            class="w-full"
-            :src="
-              $cloudinary.image.url(
-                'sebastian-schaedler/video_preview_xciqnd',
-                {
-                  width: '750',
-                  crop: 'scale',
-                }
-              )
+          <script
+            src="https://fast.wistia.com/embed/medias/asf228uz6d.jsonp"
+            async
+          ></script>
+          <script
+            src="https://fast.wistia.com/assets/external/E-v1.js"
+            async
+          ></script>
+          <span
+            class="
+              wistia_embed wistia_async_asf228uz6d
+              popover=true
+              popoverContent=link
+              block
+              relative
             "
-            alt="Video Preview"
-          />
+            ><a class="block w-full" href="#">
+              <img
+                class="
+                  wistia_embed wistia_async_asf228uz6d
+                  popover=true
+                  popoverContent=link
+                  w-full
+                "
+                :src="
+                  $cloudinary.image.url('sebastian-schaedler/video_r8pkea', {
+                    width: '750',
+                    crop: 'scale',
+                  })
+                "
+                alt="Video Preview"
+              /> </a
+          ></span>
         </div>
       </div>
     </div>
@@ -52,7 +70,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    showVideo() {},
+  },
+}
 </script>
 
 <style lang="postcss"></style>

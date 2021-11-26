@@ -11,7 +11,7 @@
         top-0
         left-0
         h-screen
-        w-full
+        w-screen
         bg-transparent
         z-100
         overflow-hidden

@@ -1,6 +1,6 @@
 <template>
   <section class="relative">
-    <div class="container px-4 mx-auto lg:max-w-5xl">
+    <div class="container px-4 mx-auto lg:max-w-5xl overflow-hidden">
       <div class="grid lg:grid-cols-2 gap-4 lg:gap-8">
         <div class="space-y-4 lg:space-y-8">
           <PrefixTitle
@@ -31,14 +31,10 @@
         </div>
         <div class="order-first lg:order-none">
           <script
-            src="https://fast.wistia.com/embed/medias/asf228uz6d.jsonp"
+            src="//fast.wistia.com/assets/external/E-v1.js"
             async
           ></script>
-          <script
-            src="https://fast.wistia.com/assets/external/E-v1.js"
-            async
-          ></script>
-          <span
+          <div
             class="
               wistia_embed wistia_async_asf228uz6d
               popover=true
@@ -46,7 +42,8 @@
               block
               relative
             "
-            ><a class="block w-full" href="#">
+          >
+            <a class="block w-full" href="#">
               <img
                 class="
                   wistia_embed wistia_async_asf228uz6d
@@ -61,8 +58,9 @@
                   })
                 "
                 alt="Video Preview"
-              /> </a
-          ></span>
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

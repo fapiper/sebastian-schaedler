@@ -2,7 +2,9 @@
   <div>
     <PageLoader />
     <TheHeader />
-    <Nuxt />
+    <div class="min-h-screen w-full overflow-hidden">
+      <Nuxt />
+    </div>
     <TheFooter />
   </div>
 </template>

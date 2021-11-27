@@ -30,38 +30,38 @@
           </TheButton>
         </div>
         <div class="order-first lg:order-none">
-          <div data-aos="fade-up" data-aos-duration="1000">
-            <script
-              src="//fast.wistia.com/assets/external/E-v1.js"
-              async
-            ></script>
-            <div
-              class="
-                wistia_embed wistia_async_asf228uz6d
-                popover=true
-                popoverContent=link
-                block
-                relative
-              "
-            >
-              <a class="block w-full" href="#">
-                <img
-                  class="
-                    wistia_embed wistia_async_asf228uz6d
-                    popover=true
-                    popoverContent=link
-                    w-full
-                  "
-                  :src="
-                    $cloudinary.image.url('sebastian-schaedler/video_r8pkea', {
-                      width: '750',
-                      crop: 'scale',
-                    })
-                  "
-                  alt="Video Preview"
-                />
-              </a>
-            </div>
+          <script
+            src="//fast.wistia.com/assets/external/E-v1.js"
+            async
+          ></script>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="
+              wistia_embed wistia_async_asf228uz6d
+              popover=true
+              popoverContent=link
+              block
+              relative
+            "
+          >
+            <a class="block w-full" href="#">
+              <img
+                class="
+                  wistia_embed wistia_async_asf228uz6d
+                  popover=true
+                  popoverContent=link
+                  w-full
+                "
+                :src="
+                  $cloudinary.image.url('sebastian-schaedler/video_r8pkea', {
+                    width: '750',
+                    crop: 'scale',
+                  })
+                "
+                alt="Video Preview"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -71,9 +71,7 @@
 
 <script>
 export default {
-  methods: {
-    showVideo() {},
-  },
+  methods: {},
 }
 </script>
 

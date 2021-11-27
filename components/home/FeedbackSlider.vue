@@ -22,7 +22,7 @@
           :key="index"
           class="swiper-slide"
         >
-          <div class="w-full px-4 lg:px-0 bg-white text-black">
+          <div class="w-full px-4 lg:px-0 bg-blue-dark">
             <div class="h-64"></div>
             <div class="text-center p-4">
               <p class="mb-2">„{{ feedback.text }}”</p>
@@ -69,7 +69,6 @@ export default {
             initialSlide: 2,
             slidesPerView: 4,
             spaceBetween: 16,
-
             freeMode: {
               enabled: true,
               sticky: true,

@@ -166,13 +166,13 @@ export default {
         {
           autoAlpha: 0,
           y: 40,
-          stagger: 0.1,
+          stagger: 0.2,
           skewX: -1,
         },
         0
       )
 
-    this.$nuxt.$on('page-transition-after', () => this.tl.play(0))
+    this.$nuxt.$on('page-transition-enter-after', () => this.tl.play(0))
   },
   methods: {
     animate() {},

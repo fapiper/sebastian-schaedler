@@ -40,7 +40,7 @@
             ref="lineHorizontal"
             class="inline-block w-full h-3 bg-yellow my-4"
           ></span>
-          <div ref="description">
+          <div ref="description" class="space-y-1">
             <h2 class="font-semibold text-lg">
               {{ subtitle }}
             </h2>
@@ -120,14 +120,14 @@ export default {
         ],
         {
           autoAlpha: 0,
-          y: 40,
-          stagger: 0.1,
-          skewX: -1,
+          y: 60,
+          stagger: 0.2,
+          skewX: -4,
         },
         0
       )
 
-    this.$nuxt.$on('page-transition-after', () => this.tl.play(0))
+    this.$nuxt.$on('page-transition-enter-after', () => this.tl.play(0))
   },
 }
 </script>

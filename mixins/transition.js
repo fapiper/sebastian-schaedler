@@ -41,6 +41,7 @@ export default {
     leave(el, done) {
       onPageLeave.play().then(() => {
         done()
+        this.$nuxt.$emit('page-transition-leave-after')
       })
     },
     enter(el, done) {
@@ -48,7 +49,9 @@ export default {
       done()
     },
     afterEnter() {
-      onPageEnter.play().then(() => this.$nuxt.$emit('page-transition-after'))
+      onPageEnter
+        .play()
+        .then(() => this.$nuxt.$emit('page-transition-enter-after'))
     },
   },
 }

@@ -94,7 +94,7 @@ export default {
       },
     })
 
-    this.$nuxt.$on('page-leave', () => {
+    this.$nuxt.$on('page-transition-leave-after', () => {
       this.menuActive = false
     })
   },

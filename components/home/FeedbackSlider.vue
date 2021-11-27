@@ -22,9 +22,9 @@
           :key="index"
           class="swiper-slide"
         >
-          <div class="w-full px-4 lg:px-0 bg-blue-dark">
-            <div class="h-64"></div>
-            <div class="text-center p-4">
+          <div class="w-full px-4 lg:px-0">
+            <div class="h-64 bg-blue-dark"></div>
+            <div class="text-center p-4 bg-blue-dark">
               <p class="mb-2">„{{ feedback.text }}”</p>
               <h4 class="text-yellow text-xl font-semibold uppercase">
                 {{ feedback.name }}

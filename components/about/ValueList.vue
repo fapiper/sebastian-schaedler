@@ -1,6 +1,6 @@
 <template>
   <section class="relative">
-    <div class="container px-4 mx-auto lg:max-w-5xl">
+    <div class="container px-4 mx-auto lg:max-w-5xl flex flex-col">
       <h2
         class="title-sm text-center mb-8"
         data-aos="fade-up"

@@ -117,7 +117,12 @@
           </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div class="form-group">
+          <div
+            class="form-group"
+            :class="{
+              'form-group--error': touched && $v.data.firstName.$error,
+            }"
+          >
             <label
               for="firstName"
               required
@@ -142,7 +147,10 @@
               </li>
             </ul>
           </div>
-          <div class="form-group">
+          <div
+            class="form-group"
+            :class="{ 'form-group--error': touched && $v.data.lastName.$error }"
+          >
             <label
               for="lastName"
               required
@@ -169,7 +177,10 @@
             </ul>
           </div>
 
-          <div class="form-group">
+          <div
+            class="form-group"
+            :class="{ 'form-group--error': touched && $v.data.email.$error }"
+          >
             <label
               for="email"
               required
@@ -198,7 +209,10 @@
               </li>
             </ul>
           </div>
-          <div class="form-group">
+          <div
+            class="form-group"
+            :class="{ 'form-group--error': touched && $v.data.phone.$error }"
+          >
             <label
               for="phone"
               :class="{
@@ -223,7 +237,57 @@
               </li>
             </ul>
           </div>
-          <div class="form-group lg:col-span-2">
+          <div
+            class="
+              form-group
+              lg:col-span-2
+              pt-4
+              grid
+              lg:grid-cols-4
+              grid-cols-2
+              gap-4
+            "
+          >
+            <label class="checkbox-label">
+              <input
+                id="business"
+                v-model.trim="$v.data.reason.$model"
+                type="checkbox"
+                value="Business"
+              /><span>Business</span>
+            </label>
+
+            <label class="checkbox-label">
+              <input
+                id="characterAnalyse"
+                v-model.trim="$v.data.reason.$model"
+                type="checkbox"
+                value="Charakter Analyse"
+              /><span>Charakter Analyse</span>
+            </label>
+
+            <label class="checkbox-label">
+              <input
+                id="know"
+                v-model.trim="$v.data.reason.$model"
+                type="checkbox"
+                value="Kennenlernen"
+              /><span>Kennenlernen</span>
+            </label>
+
+            <label class="checkbox-label">
+              <input
+                id="podcastInterview"
+                v-model.trim="$v.data.reason.$model"
+                type="checkbox"
+                value="Podcast Interview"
+              /><span>Podcast Interview</span>
+            </label>
+          </div>
+          <div
+            class="form-group lg:col-span-2"
+            :class="{ 'form-group--error': touched && $v.data.message.$error }"
+          >
             <label
               for="message"
               required
@@ -246,6 +310,21 @@
                 Eine Nachricht muss eingegeben werden.
               </li>
             </ul>
+          </div>
+          <div
+            class="form-group lg:col-span-2 pt-4"
+            :class="{ 'form-group--error': touched && $v.data.consent.$error }"
+          >
+            <label class="checkbox-label" required>
+              <input
+                id="consent"
+                v-model.trim="$v.data.consent.$model"
+                type="checkbox"
+              /><span
+                >Ja, ich habe die Datenschutzbestimmungen gelesen und akzeptiere
+                sie.</span
+              >
+            </label>
           </div>
         </div>
         <div class="mt-4 inline-block space-y-2">
@@ -291,6 +370,7 @@ export default {
         phone: '',
         reason: [],
         message: '',
+        consent: false,
       },
     }
   },
@@ -305,7 +385,8 @@ export default {
       },
       phone: { customPhone },
       reason: {},
-      message: {},
+      message: { required },
+      consent: { checked: (value) => value === true },
     },
   },
   mounted() {},
@@ -352,6 +433,7 @@ export default {
         phone: '',
         reason: [],
         message: '',
+        consent: false,
       }
     },
   },
@@ -359,7 +441,7 @@ export default {
 </script>
 
 <style scoped lang="postcss">
-input,
+input:not([type='checkbox']),
 textarea {
   @apply w-full bg-transparent border-white text-current focus:placeholder-yellow focus:border-yellow;
 }
@@ -369,8 +451,13 @@ textarea {
 }
 
 input,
-input::placeholder {
-  @apply transition-all ease-in-out duration-200;
+input::placeholder,
+.form-group {
+  @apply transition-all ease-in-out duration-500;
+}
+
+input[type='checkbox'] {
+  @apply h-5 w-5 rounded text-yellow cursor-pointer;
 }
 
 textarea:focus,
@@ -380,19 +467,36 @@ input:focus {
 }
 
 label {
-  @apply text-xs uppercase pb-1 pl-3;
+  @apply text-xs uppercase;
+}
+
+.checkbox-label {
+  @apply inline-flex items-center cursor-pointer space-x-2;
+}
+
+label:not(.checkbox-label) {
+  @apply pb-1 pl-3;
 }
 
 label[required] {
-  @apply after:ml-0.5 after:content-['*'] after:inline-block after:text-yellow;
+  @apply after:pl-0.5 after:content-['*'] after:inline after:text-yellow;
 }
 
 .form-group {
   @apply relative text-left;
 }
 
+.form-group--error label {
+  @apply text-red-600;
+}
+
+.form-group--error input:not([type='checkbox']),
+.form-group--error textarea {
+  @apply border-red-600;
+}
+
 .form-error {
-  @apply absolute -bottom-1 left-0 transform translate-y-full text-xs text-red-600;
+  @apply absolute -bottom-0.5 left-0 transform translate-y-full text-xs text-red-600;
 }
 </style>
 

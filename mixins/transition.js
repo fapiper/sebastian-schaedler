@@ -1,4 +1,3 @@
-let firstPaint = true
 let onPageEnter = null
 let onPageLeave = null
 
@@ -54,11 +53,9 @@ export default {
     },
     enter(el, done) {
       done()
+      this.$ScrollTrigger.refresh()
     },
     afterEnter() {
-      if (firstPaint) {
-        firstPaint = false
-      }
       onPageEnter.play()
     },
   },

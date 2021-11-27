@@ -1,5 +1,5 @@
 <template>
-  <div ref="imageSlider" v-swiper:imageSlider="options">
+  <div ref="imageSlider" v-swiper:imageSlider="options" :auto-destroy="false">
     <div class="swiper-wrapper">
       <div v-for="(id, index) in imageIds" :key="index" class="swiper-slide">
         <img

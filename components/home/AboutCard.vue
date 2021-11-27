@@ -9,13 +9,13 @@
             data-aos-duration="1000"
             >Sebastian</PrefixTitle
           >
-          <div data-aos="fade-up" data-aos-duration="1000">
-            <p class="mb-2">
+          <div>
+            <p class="mb-2" data-aos="fade-up" data-aos-duration="1000">
               Networker.
               <span class="text-yellow">Charakter-Trainer.</span> Torwart-Coach.
               <span class="text-yellow">Podcaster.</span>
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="1000">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

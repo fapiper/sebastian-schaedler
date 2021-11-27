@@ -1,10 +1,8 @@
 <template>
-  <div>
+  <div class="min-h-screen w-full overflow-hidden">
     <PageLoader />
     <TheHeader />
-    <div class="min-h-screen w-full overflow-hidden">
-      <Nuxt />
-    </div>
+    <Nuxt />
     <TheFooter />
   </div>
 </template>

@@ -7,6 +7,8 @@
       public-id="sebastian-schaedler/sebastianschaedler_wl73lh"
       alt="Sebastian Schädler - Podcast"
     />
+    <Overview />
+    <InterviewCard />
   </div>
 </template>
 

@@ -44,6 +44,7 @@
           <h4 class="text-lg uppercase text-yellow">Lorem Ipsum</h4>
         </li>
       </ul>
+      <TheButton class="mx-auto mt-8" to="contact">Kontaktiere mich!</TheButton>
     </div>
   </section>
 </template>

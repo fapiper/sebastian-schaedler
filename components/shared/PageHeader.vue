@@ -89,7 +89,7 @@ export default {
     this.tl = this.$gsap
       .timeline({
         paused: true,
-        defaults: { duration: 1, ease: 'Power2.easeInOut' },
+        defaults: { duration: 1, ease: 'Power2.easeOut' },
       })
       .add(
         this.$gsap

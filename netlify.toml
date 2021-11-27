@@ -1,0 +1,12 @@
+[dev]
+framework = 'nuxt'
+
+[build]
+command = "yarn generate"
+publish = "dist"
+functions = "functions"
+
+[[headers]]
+for = "/sw.js"
+[headers.values]
+cache-control = "max-age=0,no-cache,no-store,must-revalidate"

@@ -140,18 +140,6 @@ export default {
         paused: true,
         defaults: { duration: 1, ease: 'Power2.easeInOut' },
       })
-      .add(
-        this.$gsap
-          .timeline()
-          .from(this.$refs.lineVertical, {
-            scaleY: 0,
-          })
-          .from(this.$refs.lineHorizontal, {
-            scaleX: 0,
-            transformOrigin: 'left',
-          }),
-        0
-      )
       .from(
         this.$refs.img,
         {
@@ -170,6 +158,17 @@ export default {
           skewX: -1,
         },
         0
+      )
+      .add(
+        this.$gsap
+          .timeline()
+          .from(this.$refs.lineVertical, {
+            scaleY: 0,
+          })
+          .from(this.$refs.lineHorizontal, {
+            scaleX: 0,
+            transformOrigin: 'left',
+          })
       )
 
     this.$nuxt.$on('page-transition-enter-after', () => this.tl.play(0))

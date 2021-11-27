@@ -8,7 +8,7 @@
 
       <div class="grid lg:grid-cols-7 gap-8 items-center">
         <div class="lg:col-span-2 relative">
-          <img
+          <div
             class="
               absolute
               bottom-0
@@ -18,22 +18,29 @@
               -translate-x-1/2
               w-28
               z-10
-              mix-blend-exclusion
             "
-            :src="
-              $cloudinary.image.url('sebastian-schaedler/logo_white_oh36fm', {
-                width: '250',
-                crop: 'scale',
-              })
-            "
-            alt="Vision Logo"
-          />
+          >
+            <img
+              v-lazy
+              v-simple-parallax="{ overflow: true }"
+              class="w-full"
+              :data-src="
+                $cloudinary.image.url('sebastian-schaedler/logo_white_oh36fm', {
+                  width: '250',
+                  crop: 'scale',
+                })
+              "
+              alt="Vision Logo"
+            />
+          </div>
 
           <img
+            v-simple-parallax
+            v-lazy
             data-aos="fade"
             data-aos-duration="1100"
             class="w-54 ml-auto lg:ml-0"
-            :src="
+            :data-src="
               $cloudinary.image.url('sebastian-schaedler/DSC09888_qzm8jn', {
                 width: '450',
                 crop: 'scale',
@@ -53,8 +60,14 @@
           "
         >
           <img
+            v-lazy
+            v-simple-parallax="{
+              overflow: true,
+              scale: 1.4,
+              orientation: 'down',
+            }"
             class="absolute top-0 right-0 w-full max-w-md opacity-10"
-            :src="
+            :data-src="
               $cloudinary.image.url('sebastian-schaedler/jeunesse_cyc4fs', {
                 width: '850',
                 crop: 'scale',

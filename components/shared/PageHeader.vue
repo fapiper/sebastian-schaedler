@@ -5,7 +5,7 @@
         ref="lineVertical"
         class="block absolute top-0 left-0 w-3 h-84 bg-yellow z-40"
       ></span>
-      <img
+      <div
         ref="img"
         class="
           absolute
@@ -14,19 +14,22 @@
           -right-4
           w-full-8
           max-w-unset
-          h-96
           lg:right-0 lg:w-3/4
           z-10
-          object-cover
         "
-        :src="
-          $cloudinary.image.url(publicId, {
-            width: width,
-            crop: 'scale',
-          })
-        "
-        :alt="alt"
-      />
+      >
+        <img
+          v-simple-parallax="{ overflow: true }"
+          class="w-full h-96 object-cover"
+          :src="
+            $cloudinary.image.url(publicId, {
+              width: width,
+              crop: 'scale',
+            })
+          "
+          :alt="alt"
+        />
+      </div>
 
       <div ref="title" class="relative w-full max-w-lg text-center mt-64">
         <h1 class="page-header-title">

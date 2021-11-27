@@ -18,6 +18,8 @@ export default {
     '~/plugins/vue-awesome-swiper.client.js',
     '~/plugins/vuelidate.js',
     '~/plugins/aos.client.js',
+    '~/plugins/simple-parallax.client.js',
+    '~/plugins/lazy-load.client.js',
   ],
 
   components: [
@@ -63,13 +65,11 @@ export default {
   },
 
   pwa: {
-    /*
     icon: {
       fileName: 'icon.png',
       sizes: [64, 120, 144, 152, 192, 384, 512],
       purpose: 'maskable',
     },
-*/
     manifest: {
       name: 'Sebastian Schädler',
       short_name: 'Sebastian Schädler.',
@@ -85,9 +85,9 @@ export default {
       description: 'Sebastian Schädler',
       theme_color: '#1E3143',
       lang: 'de',
-      /* ogHost: 'https://nxtyou.de/',
-       ogImage: {
-         path: 'https://nxtyou.de/NXTYOU.png',
+      ogHost: 'https://sebastian-schaedler.com/',
+      /* ogImage: {
+         path: 'https://sebastian-schaedler.com/schaedler.png',
          width: '1200',
          height: '627',
        },

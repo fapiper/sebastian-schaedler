@@ -48,6 +48,7 @@
       </div>
       <div
         ref="img"
+        v-simple-parallax="{ overflow: true, scale: 2 }"
         class="
           relative
           top-0
@@ -94,6 +95,7 @@
           </li>
         </ul>
         <img
+          v-simple-parallax="{ overflow: true, orientation: 'down', scale: 2 }"
           class="
             absolute
             bottom-0

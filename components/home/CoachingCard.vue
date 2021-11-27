@@ -37,10 +37,11 @@
           </div>
 
           <img
+            v-lazy
             data-aos="zoom-out"
             data-aos-duration="1000"
             class="w-full"
-            :src="
+            :data-src="
               $cloudinary.image.url('sebastian-schaedler/story-border_doo8oq', {
                 width: '750',
                 crop: 'scale',
@@ -51,14 +52,15 @@
         </div>
         <div class="relative lg:col-span-2 space-y-8">
           <svg
+            v-simple-parallax="{ overflow: true }"
             class="
               absolute
               top-0
-              left-0
+              -left-16
               w-32
               h-auto
               text-white text-opacity-10
-              -translate-x-1/2 -translate-y-1/4
+              -translate-y-1/4
             "
             fill="currentColor"
             viewBox="0 0 349.078 349.078"

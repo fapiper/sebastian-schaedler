@@ -14,7 +14,7 @@ module.exports = {
         '50-screen': '50vw',
       },
       colors: {
-        blue: { light: '#1E3143', DEFAULT: '#1E3143', dark: '#1F2B36' },
+        blue: { light: '#1E3143', DEFAULT: '#1e3143', dark: '#1F2B36' },
         yellow: { DEFAULT: '#CDA000' },
       },
       width: {

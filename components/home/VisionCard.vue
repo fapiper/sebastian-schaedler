@@ -17,6 +17,8 @@
               translate-y-1/2
               -translate-x-1/2
               w-28
+              z-10
+              mix-blend-exclusion
             "
             :src="
               $cloudinary.image.url('sebastian-schaedler/logo_white_oh36fm', {
@@ -24,7 +26,7 @@
                 crop: 'scale',
               })
             "
-            alt="Story of my Life"
+            alt="Vision Logo"
           />
 
           <img

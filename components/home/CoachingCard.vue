@@ -51,7 +51,15 @@
         </div>
         <div class="relative lg:col-span-2 space-y-8">
           <svg
-            class="absolute top-0 left-0 w-32 h-auto text-white text-opacity-10"
+            class="
+              absolute
+              top-0
+              left-0
+              w-32
+              h-auto
+              text-white text-opacity-10
+              -translate-x-1/2 -translate-y-1/4
+            "
             fill="currentColor"
             viewBox="0 0 349.078 349.078"
           >

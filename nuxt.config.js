@@ -9,21 +9,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      /*
-      {
-        type: 'text/javascript',
-        src: 'https://fast.wistia.com/embed/medias/asf228uz6d.jsonp',
-        async: true,
-      },
-      {
-        type: 'text/javascript',
-        src: 'https://fast.wistia.com/assets/external/E-v1.js',
-        async: true,
-      },
-*/
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   css: [],
@@ -77,8 +63,37 @@ export default {
   },
 
   pwa: {
+    /*
+    icon: {
+      fileName: 'icon.png',
+      sizes: [64, 120, 144, 152, 192, 384, 512],
+      purpose: 'maskable',
+    },
+*/
     manifest: {
+      name: 'Sebastian Schädler',
+      short_name: 'Sebastian Schädler.',
       lang: 'de',
+      description: 'Sebastian Schädler',
+      start_url: '',
+      background_color: '#1E3143',
+    },
+    meta: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      name: 'Sebastian Schädler',
+      description: 'Sebastian Schädler',
+      theme_color: '#1E3143',
+      lang: 'de',
+      /* ogHost: 'https://nxtyou.de/',
+       ogImage: {
+         path: 'https://nxtyou.de/NXTYOU.png',
+         width: '1200',
+         height: '627',
+       },
+ */
+      twitterCard: 'summary_large_image',
+      twitterCreator: 'Sebastian Schädler',
     },
   },
 

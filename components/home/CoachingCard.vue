@@ -1,6 +1,6 @@
 <template>
   <section id="coaching-character" class="relative">
-    <div class="container px-4 mx-auto lg:max-w-5xl">
+    <div class="container px-4 mx-auto lg:max-w-5xl overflow-hidden">
       <PrefixTitle
         class="mb-4"
         prefix="Coaching"

@@ -45,10 +45,9 @@
         class="
           relative
           top-0
-          -right-4
-          lg:right-0
-          w-full-8
-          lg:w-full
+          left-0
+          lg:left-auto lg:right-0
+          w-full-4
           h-full
           flex
           mt-20

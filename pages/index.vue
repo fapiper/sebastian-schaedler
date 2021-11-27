@@ -7,7 +7,7 @@
     <VisionCard />
     <SocialShare :dense="true" />
     <CoachingCard />
-    <Feedback />
+    <FeedbackSlider />
   </div>
 </template>
 

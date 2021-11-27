@@ -1,8 +1,12 @@
 <template>
   <header class="container px-4 mx-auto max-w-5xl overflow-hidden">
     <div class="relative lg:min-h-screen pt-20">
-      <span class="block absolute top-0 left-0 w-3 h-84 bg-yellow z-40"></span>
+      <span
+        ref="lineVertical"
+        class="block absolute top-0 left-0 w-3 h-84 bg-yellow z-40"
+      ></span>
       <img
+        ref="img"
         class="
           absolute
           top-0
@@ -24,19 +28,24 @@
         :alt="alt"
       />
 
-      <div class="relative w-full max-w-lg text-center mt-64">
-        <span class="page-header-title page-header-title--line">{{
-          title
-        }}</span>
+      <div ref="title" class="relative w-full max-w-lg text-center mt-64">
         <h1 class="page-header-title">
           {{ title }}
         </h1>
+        <span class="page-header-title page-header-title--line">{{
+          title
+        }}</span>
         <div class="relative z-20">
-          <span class="inline-block w-full h-3 bg-yellow my-4"></span>
-          <h2 class="font-semibold text-lg">
-            {{ subtitle }}
-          </h2>
-          <p>{{ description }}</p>
+          <span
+            ref="lineHorizontal"
+            class="inline-block w-full h-3 bg-yellow my-4"
+          ></span>
+          <div ref="description">
+            <h2 class="font-semibold text-lg">
+              {{ subtitle }}
+            </h2>
+            <p>{{ description }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -70,6 +79,55 @@ export default {
       type: Number,
       default: 1000,
     },
+  },
+  data() {
+    return {
+      tl: null,
+    }
+  },
+  mounted() {
+    this.tl = this.$gsap
+      .timeline({
+        paused: true,
+        defaults: { duration: 1, ease: 'Power2.easeInOut' },
+      })
+      .add(
+        this.$gsap
+          .timeline()
+          .from(this.$refs.lineVertical, {
+            scaleY: 0,
+            transformOrigin: 'top',
+          })
+          .from(this.$refs.lineHorizontal, {
+            scaleX: 0,
+            transformOrigin: 'left',
+          }),
+        0
+      )
+      .from(
+        this.$refs.img,
+        {
+          autoAlpha: 0,
+          y: 200,
+          skewX: -4,
+        },
+        0.2
+      )
+      .from(
+        [
+          this.$refs.title.querySelectorAll('.page-header-title'),
+          this.$refs.description,
+        ],
+        {
+          autoAlpha: 0,
+          y: 40,
+          stagger: 0.1,
+          skewX: -1,
+        },
+        0
+      )
+
+    this.$nuxt.$on('page-transition-after', () => this.tl.play(0))
   },
 }
 </script>

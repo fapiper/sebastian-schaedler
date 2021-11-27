@@ -15,13 +15,6 @@ export default {
       })
       .to('[data-transition-bg]', { height: 0 }, 0.6)
       .to('[data-transition-logo]', { y: -450, autoAlpha: 0 }, 0)
-      .to(
-        '[data-transition-layout]',
-        {
-          y: 0,
-        },
-        1.1
-      )
 
     onPageLeave = tl()
       .set('[data-transition-logo]', { autoAlpha: 0, y: 40 })
@@ -47,16 +40,15 @@ export default {
     appear: true,
     leave(el, done) {
       onPageLeave.play().then(() => {
-        this.$nuxt.$emit('page-leave')
         done()
       })
     },
     enter(el, done) {
-      done()
       this.$ScrollTrigger.refresh()
+      done()
     },
     afterEnter() {
-      onPageEnter.play()
+      onPageEnter.play().then(() => this.$nuxt.$emit('page-transition-after'))
     },
   },
 }

@@ -11,23 +11,25 @@
         lg:py-20
       "
     >
-      <div
-        class="
-          relative
-          before:block
-          before:absolute
-          before:-top-4
-          before:transform
-          before:-translate-y-full
-          before:left-0
-          before:w-3
-          before:h-screen
-          before:bg-yellow
-        "
-      >
-        <h1
+      <div class="relative">
+        <span
+          ref="lineVertical"
           class="
-            inline
+            block
+            absolute
+            -top-4
+            transform
+            -translate-y-full
+            left-0
+            w-3
+            h-screen
+            bg-yellow
+          "
+        ></span>
+
+        <h1
+          ref="title"
+          class="
             text-5xl
             lg:text-7xl
             tracking-wide
@@ -38,10 +40,14 @@
         >
           {{ title }}
         </h1>
-        <span class="inline-block w-full h-3 bg-yellow my-4"></span>
-        <p>{{ description }}</p>
+        <span
+          ref="lineHorizontal"
+          class="inline-block w-full h-3 bg-yellow my-4"
+        ></span>
+        <p ref="description">{{ description }}</p>
       </div>
       <div
+        ref="img"
         class="
           relative
           top-0
@@ -114,25 +120,59 @@
 <script>
 export default {
   props: {
-    type: {
-      type: String,
-      default: 'default',
-    },
     title: {
       type: String,
       required: true,
-    },
-    subtitle: {
-      type: String,
-      default: '',
     },
     description: {
       type: String,
       required: true,
     },
   },
+  data() {
+    return {
+      tl: null,
+    }
+  },
   mounted() {
-    this.$nuxt.$on('page-transition-after', this.animate.bind(this))
+    this.tl = this.$gsap
+      .timeline({
+        paused: true,
+        defaults: { duration: 1, ease: 'Power2.easeInOut' },
+      })
+      .add(
+        this.$gsap
+          .timeline()
+          .from(this.$refs.lineVertical, {
+            scaleY: 0,
+          })
+          .from(this.$refs.lineHorizontal, {
+            scaleX: 0,
+            transformOrigin: 'left',
+          }),
+        0
+      )
+      .from(
+        this.$refs.img,
+        {
+          autoAlpha: 0,
+          y: 200,
+          skewX: -4,
+        },
+        0.2
+      )
+      .from(
+        [this.$refs.title, this.$refs.description],
+        {
+          autoAlpha: 0,
+          y: 40,
+          stagger: 0.1,
+          skewX: -1,
+        },
+        0
+      )
+
+    this.$nuxt.$on('page-transition-after', () => this.tl.play(0))
   },
   methods: {
     animate() {},

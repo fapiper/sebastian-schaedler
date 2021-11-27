@@ -7,7 +7,7 @@ const MAIL_PASS = process.env.MAIL_PASS
 
 const RECIPIENT_DOMAIN = 'sebastian-schaedler.com'
 const RECIPIENT_NAME = 'Sebastian Schädler'
-const RECIPIENT_EMAIL = 'info@sebastian-schaedler.com'
+const RECIPIENT_EMAIL = 'fabianpiper@web.de'
 
 exports.handler = function (event, context, callback) {
   console.log('called mail.js')

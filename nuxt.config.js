@@ -42,7 +42,14 @@ export default {
 
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/cloudinary'],
 
-  axios: {},
+  axios: {
+    baseURL: process.env.BASE_URL,
+    headers: {
+      post: {
+        'Content-Type': 'application/json',
+      },
+    },
+  },
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',

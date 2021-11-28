@@ -9,6 +9,10 @@ const RECIPIENT_DOMAIN = 'sebastian-schaedler.com'
 const RECIPIENT_NAME = 'Sebastian Schädler'
 const RECIPIENT_EMAIL = 'fabianpiper@web.de'
 
+const formatCheckbox = (input) => {
+  return input.join(', ').replace(/, ([^,]*)$/, ', $1')
+}
+
 exports.handler = function (event, context, callback) {
   console.log('called mail.js')
 
@@ -47,6 +51,12 @@ exports.handler = function (event, context, callback) {
       }</td>
     </tr>
     <tr>
+      <td style="vertical-align: top; padding: 6px 14px 6px 0; font-weight: bolder;">Aus welchem Grund?:</td>
+      <td style="vertical-align: top; padding: 6px 0;">${
+        form.reason.length <= 0 ? '[keine Angabe]' : formatCheckbox(form.reason)
+      }</td>
+    </tr>
+    <tr>
       <td style='vertical-align: top; padding: 6px 14px 6px 0; font-weight: bolder;'>Nachricht:</td>
       <td style='vertical-align: top; padding: 6px 0;'>${form.message}</td>
     </tr>
@@ -74,31 +84,32 @@ exports.handler = function (event, context, callback) {
     subject: `[${RECIPIENT_DOMAIN}] Kopie Ihrer Nachricht an Sebastian Schädler`,
     html: `
       <h1>Kopie Ihrer Nachricht an ${RECIPIENT_NAME}</h1>
+      <p>Vielen Dank für Ihre Anfrage. Anbei finden Sie eine Kopie Ihrer Nachricht an Sebastian Schädler:</p>
       ${emailBody}
       ${emailFooter}
 `,
   }
 
-  Promise.all([transporter.sendMail(original), transporter.sendMail(duplicate)])
-    .then((values) => {
-      const response = {
-        statusCode: 200,
-        body: JSON.stringify({
-          success: true,
-          message: `Die Nachricht wurde erfolgreich verschickt.`,
-        }),
-      }
-      callback(null, response)
-    })
-    .catch(function (err) {
+  transporter.sendMail(original, function (error, data) {
+    if (error) {
       const response = {
         statusCode: 500,
         body: JSON.stringify({
           success: false,
-          error: err.message,
+          error: error.message,
           message: `Beim Senden der Nachricht ist ein Fehler aufgetreten.`,
         }),
       }
       callback(null, response)
-    })
+    }
+
+    const response = {
+      statusCode: 200,
+      body: JSON.stringify({
+        success: true,
+        message: `Die Nachricht wurde erfolgreich verschickt.`,
+      }),
+    }
+    callback(null, response)
+  })
 }

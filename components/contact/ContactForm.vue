@@ -30,11 +30,12 @@
             flex
             items-center
             justify-center
+            text-center
           "
         >
           <div v-if="loading">
             <svg
-              class="animate-spin h-8 w-8 text-yellow"
+              class="animate-spin-quick h-8 w-8 text-yellow"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"

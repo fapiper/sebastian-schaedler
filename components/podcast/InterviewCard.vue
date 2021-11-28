@@ -2,18 +2,19 @@
   <section class="relative">
     <div class="container px-4 mx-auto lg:max-w-5xl">
       <div class="grid lg:grid-cols-2 gap-4 lg:gap-8 items-center">
-        <img
-          class="w-full"
-          data-aos="fade"
-          data-aos-duration="1100"
-          :src="
-            $cloudinary.image.url('sebastian-schaedler/DSC00892_w2zbiy', {
-              width: '450',
-              crop: 'scale',
-            })
-          "
-          alt="Story of my Life"
-        />
+        <div class="w-full" data-aos="fade" data-aos-duration="1100">
+          <img
+            v-simple-parallax
+            class="w-full"
+            :src="
+              $cloudinary.image.url('sebastian-schaedler/DSC00647-2_vi5zhp', {
+                width: '450',
+                crop: 'scale',
+              })
+            "
+            alt="Podcast Interview"
+          />
+        </div>
 
         <div class="space-y-8">
           <PrefixTitle

@@ -46,6 +46,7 @@ export default {
     },
     enter(el, done) {
       this.$ScrollTrigger.refresh()
+      this.$AOS.refresh()
       done()
     },
     afterEnter() {

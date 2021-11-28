@@ -7,20 +7,20 @@
         <div class="w-4/5 lg:mx-auto">
           <div class="relative">
             <div
-              v-simple-parallax="{ overflow: true, orientation: 'down' }"
               data-aos="fade-up"
               data-aos-duration="1000"
-              class="z-10 absolute top-0 right-0 lg:left-0"
+              class="
+                z-10
+                absolute
+                -top-16
+                -right-16
+                lg:right-auto lg:-left-16
+                w-32
+              "
             >
               <img
                 v-lazy
-                class="
-                  transform
-                  translate-x-2/3
-                  lg:-translate-x-2/3
-                  -translate-y-1/3
-                  w-32
-                "
+                class="w-full animate-spin-slow"
                 :data-src="
                   $cloudinary.image.url(
                     'sebastian-schaedler/logo_white_oh36fm',
@@ -33,20 +33,21 @@
                 alt="Story of my Life Logo"
               />
             </div>
-            <img
-              v-simple-parallax
-              v-lazy
-              class="w-full"
-              data-aos="fade"
-              data-aos-duration="1100"
-              :data-src="
-                $cloudinary.image.url('sebastian-schaedler/DSC00892_w2zbiy', {
-                  width: '450',
-                  crop: 'scale',
-                })
-              "
-              alt="Story of my Life"
-            />
+
+            <div class="w-full" data-aos="fade" data-aos-duration="1100">
+              <img
+                v-simple-parallax
+                v-lazy
+                class="w-full"
+                :data-src="
+                  $cloudinary.image.url('sebastian-schaedler/DSC00892_w2zbiy', {
+                    width: '450',
+                    crop: 'scale',
+                  })
+                "
+                alt="Story of my Life"
+              />
+            </div>
           </div>
         </div>
         <div class="space-y-8">

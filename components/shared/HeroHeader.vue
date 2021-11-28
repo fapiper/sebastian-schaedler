@@ -47,7 +47,6 @@
         <p ref="description">{{ description }}</p>
       </div>
       <div
-        ref="img"
         v-simple-parallax="{ overflow: true, scale: 2 }"
         class="
           relative
@@ -61,59 +60,56 @@
           lg:mt-0 lg:pl-20
         "
       >
-        <img
-          class="h-full w-full object-cover"
-          :src="
-            $cloudinary.image.url('sebastian-schaedler/DSC09735-2_zopcjz', {
-              width: '450',
-              crop: 'scale',
-            })
-          "
-          alt="Sebastian Schädler"
-        />
-        <ul
-          class="
-            absolute
-            top-0
-            lg:top-auto lg:bottom-0
-            right-0
-            p-4
-            flex
-            items-center
-            space-x-1
-            text-yellow
-          "
-        >
-          <li>
-            <Instagram></Instagram>
-          </li>
-          <li>
-            <Linkedin class="border-yellow"></Linkedin>
-          </li>
-          <li>
-            <Facebook class="border-yellow"></Facebook>
-          </li>
-        </ul>
-        <img
-          v-simple-parallax="{ overflow: true, orientation: 'down', scale: 2 }"
-          class="
-            absolute
-            bottom-0
-            left-0
-            transform
-            -translate-x-8
-            lg:translate-x-4
-            translate-y-16
-            w-80
-          "
-          :src="
-            $cloudinary.image.url('sebastian-schaedler/logo_fkcnoj', {
-              width: '450',
-              crop: 'scale',
-            })
-          "
-          alt="Sebastian Schädler Unterschrift"
-        />
+        <div ref="img" class="w-full h-full flex">
+          <img
+            class="h-full w-full object-cover"
+            :src="
+              $cloudinary.image.url('sebastian-schaedler/DSC09735-2_zopcjz', {
+                width: '450',
+                crop: 'scale',
+              })
+            "
+            alt="Sebastian Schädler"
+          />
+          <ul
+            class="
+              absolute
+              top-0
+              lg:top-auto lg:bottom-0
+              right-0
+              p-4
+              flex
+              items-center
+              space-x-1
+              text-yellow
+            "
+          >
+            <li>
+              <Instagram></Instagram>
+            </li>
+            <li>
+              <Linkedin class="border-yellow"></Linkedin>
+            </li>
+            <li>
+              <Facebook class="border-yellow"></Facebook>
+            </li>
+          </ul>
+          <img
+            v-simple-parallax="{
+              overflow: true,
+              orientation: 'down',
+              scale: 2,
+            }"
+            class="absolute -bottom-16 -left-8 w-80"
+            :src="
+              $cloudinary.image.url('sebastian-schaedler/logo_fkcnoj', {
+                width: '450',
+                crop: 'scale',
+              })
+            "
+            alt="Sebastian Schädler Unterschrift"
+          />
+        </div>
       </div>
     </div>
   </header>

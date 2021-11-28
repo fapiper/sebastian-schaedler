@@ -8,6 +8,8 @@
       alt="Sebastian Schädler - Podcast"
     />
     <Overview />
+    <Cover />
+    <Player />
     <InterviewCard />
   </div>
 </template>

@@ -22,7 +22,7 @@
           >
             <img
               v-lazy
-              v-simple-parallax="{ overflow: true }"
+              v-simple-parallax="{ overflow: true, orientation: 'down' }"
               class="w-full"
               :data-src="
                 $cloudinary.image.url('sebastian-schaedler/logo_white_oh36fm', {
@@ -34,20 +34,24 @@
             />
           </div>
 
-          <img
-            v-simple-parallax
-            v-lazy
+          <div
+            class="w-54 ml-auto lg:ml-0"
             data-aos="fade"
             data-aos-duration="1100"
-            class="w-54 ml-auto lg:ml-0"
-            :data-src="
-              $cloudinary.image.url('sebastian-schaedler/DSC09888_qzm8jn', {
-                width: '450',
-                crop: 'scale',
-              })
-            "
-            alt="Vision"
-          />
+          >
+            <img
+              v-simple-parallax
+              v-lazy
+              class="w-full"
+              :data-src="
+                $cloudinary.image.url('sebastian-schaedler/DSC09888_qzm8jn', {
+                  width: '450',
+                  crop: 'scale',
+                })
+              "
+              alt="Vision"
+            />
+          </div>
         </div>
         <div
           class="

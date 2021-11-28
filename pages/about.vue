@@ -18,5 +18,8 @@ import Transition from '~/mixins/transition.js'
 
 export default {
   mixins: [Transition],
+  head: {
+    title: 'About - Sebastian Schädler',
+  },
 }
 </script>

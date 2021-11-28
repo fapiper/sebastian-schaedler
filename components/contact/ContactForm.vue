@@ -238,52 +238,46 @@
               </li>
             </ul>
           </div>
-          <div
-            class="
-              form-group
-              lg:col-span-2
-              pt-4
-              grid
-              lg:grid-cols-4
-              grid-cols-2
-              gap-4
-            "
-          >
-            <label class="checkbox-label">
-              <input
-                id="business"
-                v-model.trim="$v.data.reason.$model"
-                type="checkbox"
-                value="Business"
-              /><span>Business</span>
-            </label>
+          <div class="form-group lg:col-span-2">
+            <label>Aus welchen Gründen?</label>
 
-            <label class="checkbox-label">
-              <input
-                id="characterAnalyse"
-                v-model.trim="$v.data.reason.$model"
-                type="checkbox"
-                value="Charakter Analyse"
-              /><span>Charakter Analyse</span>
-            </label>
+            <div class="pt-4 grid lg:grid-cols-4 grid-cols-2 gap-4">
+              <label class="checkbox-label">
+                <input
+                  id="business"
+                  v-model.trim="$v.data.reason.$model"
+                  type="checkbox"
+                  value="Business"
+                /><span>Business</span>
+              </label>
 
-            <label class="checkbox-label">
-              <input
-                id="know"
-                v-model.trim="$v.data.reason.$model"
-                type="checkbox"
-                value="Kennenlernen"
-              /><span>Kennenlernen</span>
-            </label>
+              <label class="checkbox-label">
+                <input
+                  id="characterAnalyse"
+                  v-model.trim="$v.data.reason.$model"
+                  type="checkbox"
+                  value="Charakter Analyse"
+                /><span>Charakter Analyse</span>
+              </label>
 
-            <label class="checkbox-label">
-              <input
-                id="podcastInterview"
-                v-model.trim="$v.data.reason.$model"
-                type="checkbox"
-                value="Podcast Interview"
-              /><span>Podcast Interview</span>
-            </label>
+              <label class="checkbox-label">
+                <input
+                  id="know"
+                  v-model.trim="$v.data.reason.$model"
+                  type="checkbox"
+                  value="Kennenlernen"
+                /><span>Kennenlernen</span>
+              </label>
+
+              <label class="checkbox-label">
+                <input
+                  id="podcastInterview"
+                  v-model.trim="$v.data.reason.$model"
+                  type="checkbox"
+                  value="Podcast Interview"
+                /><span>Podcast Interview</span>
+              </label>
+            </div>
           </div>
           <div
             class="form-group lg:col-span-2"
@@ -467,16 +461,12 @@ input:focus {
   box-shadow: none;
 }
 
-label {
-  @apply text-xs uppercase;
-}
-
 .checkbox-label {
   @apply inline-flex items-center cursor-pointer space-x-2;
 }
 
 label:not(.checkbox-label) {
-  @apply pb-1 pl-3;
+  @apply text-xs uppercase pb-1 pl-3;
 }
 
 label[required] {

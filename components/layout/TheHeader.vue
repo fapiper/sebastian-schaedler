@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <HeaderMenu :active="menuActive" />
+      <HeaderMenu :active.sync="menuActive" />
     </nav>
   </header>
 </template>
@@ -92,10 +92,6 @@ export default {
       onUpdate: (self) => {
         self.direction === -1 ? showAnim.play() : showAnim.reverse()
       },
-    })
-
-    this.$nuxt.$on('page-transition-leave-after', () => {
-      this.menuActive = false
     })
   },
 }

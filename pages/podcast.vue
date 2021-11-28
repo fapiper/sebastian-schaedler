@@ -2,8 +2,8 @@
   <div>
     <PageHeader
       title="Podcast"
-      subtitle="Sebastian Schädler"
-      description="Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg."
+      subtitle="Sebastian & Fabian Schädler"
+      description="Es war langer ein Wunsch, mit meinem Bruder Fabian, einen gemeinsamen Podcast zu machen. Jetzt ist es endlich soweit! Es geht um Fußball, Business und Mindset."
       public-id="sebastian-schaedler/sebastianschaedler_wl73lh"
       alt="Sebastian Schädler - Podcast"
     />
@@ -19,5 +19,8 @@ import Transition from '~/mixins/transition.js'
 
 export default {
   mixins: [Transition],
+  head: {
+    title: 'Podcast - Sebastian Schädler',
+  },
 }
 </script>

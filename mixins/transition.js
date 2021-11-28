@@ -39,20 +39,19 @@ export default {
     mode: 'out-in',
     appear: true,
     leave(el, done) {
+      this.$scroll.lock()
       onPageLeave.play().then(() => {
         done()
-        this.$nuxt.$emit('page-transition-leave-after')
       })
     },
     enter(el, done) {
-      this.$ScrollTrigger.refresh()
-      this.$AOS.refresh()
-      done()
-    },
-    afterEnter() {
-      onPageEnter
-        .play()
-        .then(() => this.$nuxt.$emit('page-transition-enter-after'))
+      onPageEnter.play().then(() => {
+        this.$nuxt.$emit('page-transition-enter-after')
+        this.$scroll.unlock()
+        this.$ScrollTrigger.refresh()
+        this.$AOS.refresh()
+        done()
+      })
     },
   },
 }

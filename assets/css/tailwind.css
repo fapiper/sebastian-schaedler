@@ -29,3 +29,11 @@ section {
 .title-sm {
   @apply text-3xl uppercase font-semibold tracking-wider
 }
+
+a {
+  @apply ease-in-out transition-all duration-300 hover:text-yellow hover:border-yellow;
+}
+a.nuxt-link-exact-active {
+  @apply text-yellow border-yellow;
+}
+

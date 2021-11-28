@@ -13,7 +13,7 @@
             <p data-aos="fade-up" data-aos-duration="1000">
               Familienmensch.
               <span class="text-yellow">Networker.</span> PQS-Coach.
-              <span class="text-yellow">Towarttrainer.</span> Podcaster.
+              <span class="text-yellow">Podcaster.</span> Towarttrainer.
             </p>
             <p data-aos="fade-up" data-aos-duration="1000">
               Mit mehr als sieben Jahren Erfahrung auf den Gebieten der

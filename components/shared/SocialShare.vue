@@ -1,6 +1,6 @@
 <template>
   <section class="overflow-hidden">
-    <div class="container px-4 mx-auto lg:max-w-6xl">
+    <div class="container px-4 mx-auto lg:max-w-5xl">
       <h2
         class="relative title-sm text-center z-10"
         data-aos="fade-up"

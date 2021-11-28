@@ -1,7 +1,7 @@
 <template>
   <HeroHeader
     title="Sebastian Schädler"
-    description="Networker. Charakter-Trainer. Torwart-Coach. Podcaster."
+    description="Familienmensch. Networker. PQS-Coach. Podcaster. Towarttrainer."
   >
   </HeroHeader>
 </template>

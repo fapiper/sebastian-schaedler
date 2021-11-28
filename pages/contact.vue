@@ -3,8 +3,8 @@
     <PageHeader
       title="Kontakt"
       subtitle="Sebastian Schädler"
-      description="Ich freue mich über "
-      public-id="sebastian-schaedler/DSC09888_qzm8jn"
+      description="Du kannst mich jederzeit kontaktieren, lass uns kennenlernen, über Möglichkeiten der Zusammenarbeit sprechen, ein Podcast Interview machen, dein Potential entfalten oder einfach eine Runde Fußball spielen. Ich freue mich auf dich! "
+      public-id="sebastian-schaedler/sebastianschaedler_wl73lh"
       alt="Sebastian Schädler - Kontakt"
     />
     <ContactForm />
@@ -16,5 +16,8 @@ import Transition from '~/mixins/transition.js'
 
 export default {
   mixins: [Transition],
+  head: {
+    title: 'Kontakt - Sebastian Schädler',
+  },
 }
 </script>

@@ -21,23 +21,8 @@
       <div class="h-20 flex-auto w-full"></div>
       <div class="p-4 pt-20 flex-auto h-full overflow-auto flex flex-col">
         <ul class="w-full flex flex-col space-y-4 text-3xl text-right">
-          <li>
-            <NuxtLink to="/">Startseite</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/about">About</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/">Business</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/coaching">Coaching</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/podcast">Podcast</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/contact">Kontakt</NuxtLink>
+          <li v-for="(link, index) of links" :key="index">
+            <NuxtLink ref="link" :to="link.to">{{ link.title }}</NuxtLink>
           </li>
         </ul>
         <ul
@@ -84,6 +69,14 @@ export default {
   },
   data() {
     return {
+      links: [
+        { title: 'Startseite', to: '/' },
+        { title: 'About', to: '/about' },
+        { title: 'Business', to: '/#business-and-vision' },
+        { title: 'Coaching', to: '/#coaching-character' },
+        { title: 'Podcast', to: '/podcast' },
+        { title: 'Kontakt', to: '/contact' },
+      ],
       tl: null,
     }
   },
@@ -102,10 +95,11 @@ export default {
   },
   methods: {
     onEnter(el, done) {
+      this.$scroll.lock()
       this.tl.play().then(done)
     },
     onLeave(el, done) {
-      this.tl.reverse().then(done)
+      this.tl.reverse().then(done).then(this.$scroll.unlock)
     },
   },
 }

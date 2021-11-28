@@ -2,7 +2,6 @@ export default {
   target: 'static',
 
   head: {
-    title: 'Sebastian Schädler',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,6 +19,7 @@ export default {
     '~/plugins/aos.client.js',
     '~/plugins/simple-parallax.client.js',
     '~/plugins/lazy-load.client.js',
+    '~/plugins/scroll.client.js',
   ],
 
   components: [

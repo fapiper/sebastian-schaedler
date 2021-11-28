@@ -35,9 +35,11 @@ export default {
           640: {
             slidesPerView: 3,
             centeredSlides: false,
+            initialSlide: 1,
           },
           1024: {
             slidesPerView: 5,
+            initialSlide: 2,
           },
         },
       },

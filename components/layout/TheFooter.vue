@@ -57,10 +57,10 @@
               <NuxtLink to="/about">About</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">Business</NuxtLink>
+              <NuxtLink to="/#business-and-vision">Business</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">Coaching</NuxtLink>
+              <NuxtLink to="/#coaching-character">Coaching</NuxtLink>
             </li>
             <li>
               <NuxtLink to="/podcast">Podcast</NuxtLink>
@@ -104,10 +104,10 @@
               <NuxtLink to="/contact">Kontakt</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">Impressum</NuxtLink>
+              <NuxtLink to="/terms">Impressum</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/">Datenschutz</NuxtLink>
+              <NuxtLink to="/privacy">Datenschutz</NuxtLink>
             </li>
           </ul>
         </div>

@@ -59,19 +59,25 @@
           >
           <div class="space-y-4" data-aos="fade-up" data-aos-duration="1000">
             <p>
-              Stell dir vor, du führst ein erfülltes Leben, dir wird alles
-              geboten und innerhalb von einer Sekunde ändert sich alles. Alle
-              Träume und Ziele sind in diesem Moment nicht mehr relevant. Du
-              hast deinen Vater gerade verloren, Koma, 5 Jahre Leidenszeit und
-              dann die Nachricht, er ist tot.
+              Arbeiten, wo andere Urlaub machen. Da ich vom Bodensee komme, war
+              das immer der Slogan, den ich schon als Kind gehört habe. Klingt
+              extrem gut und als ich im Tourismus als dualer Student angefangen
+              habe zu arbeiten, hat das auch viel Spaß gebracht. Die ersten
+              Schritte meiner Karriere hat mir der Tourismus gezeigt, was
+              Dienstleistung bedeutet und wie man Menschen aus dem Alltag holt
+              und wieder Träumen lässt. Fröhliche Menschen, gute Laune, aber
+              gleichzeitig auch viel Wochenendarbeit, unflexibel und keine Zeit
+              mehr für meine Leidenschaft, den Fußball.
             </p>
             <p>
-              5 Jahre, die für mein Leben extrem prägend waren. 5 Jahre, die
-              mitentscheidend sind für den Weg, den ich heute gehe. Denn durch
-              diese Zeit wurde mir bewusst, was wirklich zählt. Niemand weiß,
-              wie lange wir auf diesem Planeten bleiben dürfen, und wir allein
-              entscheiden, was wir aus dieser Zeit machen. Aber zurück zum
-              Anfang…
+              Also habe ich mein Glück als Personalberater gesucht –
+              Headhunting, coole Leute, geiler Spirit, viel Spaß. Als
+              Personalberater habe ich hunderte von Gesprächen mit Menschen
+              geführt, die eigentlich mehr wollen, als das, was sie aktuell
+              haben. Mehr nicht nur in finanziellem Sinne, sondern mehr vom
+              Leben. Und dann fängt man an sich diese Fragen auch selbst zu
+              stellen – Was will ich eigentlich vom Leben? Wo will ich hin? Was
+              sind meine Ziele? Wie komme ich dorthin?
             </p>
             <transition
               leave-active-class="opacity-100 duration-300"
@@ -79,39 +85,32 @@
               enter-class="ease-in opacity-0 duration-200"
               leave-to-class="ease-in opacity-0 duration-200"
             >
-              <div v-show="active">
+              <div v-show="active" class="space-y-4">
                 <p>
-                  Arbeiten, wo andere Urlaub machen. Da ich vom Bodensee komme,
-                  war das immer der Slogan, den ich schon als Kind gehört habe.
-                  Klingt extrem gut und als ich im Tourismus als dualer Student
-                  angefangen habe zu arbeiten, hat das auch viel Spaß gebracht.
-                  Fröhliche Menschen, gute Laune, aber gleichzeitig auch viel
-                  Wochenendarbeit, unflexibel und keine Zeit mehr für meine
-                  Leidenschaft, den Fußball.
-                </p>
-                <p>
-                  Also habe ich mein Glück danach in der Personalberatung
-                  gesucht – Headhunting, coole Leute, geiler Spirit, viel Spaß.
-                  Als Personalberater habe ich hunderte von Gesprächen mit
-                  Menschen geführt, die eigentlich mehr wollen, als das, was sie
-                  aktuell haben. Mehr nicht nur in finanziellem Sinne, sondern
-                  mehr vom Leben. Und dann fängt man an sich diese Fragen auch
-                  selbst zu stellen – Was will ich eigentlich vom Leben? Wo will
-                  ich hin? Was sind meine Ziele? Wie komme ich dorthin?
-                </p>
-                <p>
-                  Und in diese Zeit der familiäre Schicksalsschlag und das
-                  Bewusstsein, wie schnell das Leben vorbei sein kann.
+                  Und in diese Zeit ein Schicksalsschlag, der alles veränderte.
+                  Stell Dir vor, Du führst ein erfülltes Leben, Dir wird vieles
+                  geboten und innerhalb von einer Sekunde ändert sich alles.
+                  Alle Träume und Ziele sind in diesem Moment nicht mehr
+                  relevant. Du hast deinen Vater gerade verloren - Koma, fünf
+                  Jahre Leidenszeit und dann die Nachricht, er ist tot. Fünf
+                  Jahre, die für mein Leben extrem prägend waren. Fünf Jahre,
+                  die mitentscheidend sind für den Weg, den ich heute gehe. Denn
+                  durch diese Zeit wurde mir bewusst, was wirklich zählt. Unsere
+                  Lebensjahre sind begrenzt und wir allein entscheiden, was wir
+                  aus dieser Zeit machen.
                 </p>
                 <p>
                   Wir haben heutzutage viele Möglichkeiten, am einfachsten ist
-                  es den Weg mit Menschen zu gehen, die bereits dort sind, wo du
+                  es den Weg mit Menschen zu gehen, die bereits dort sind, wo Du
                   hin möchtest. Genau das habe auch ich gemacht, mir Menschen
                   mit ähnlichen Werten gesucht, von ihnen gelernt, um gemeinsam
-                  Träume zu verwirklichen. Denn wie im Fußball, wo du als
-                  Torwart zwar eine Art Einzelkämpfer bist, Meisterschaften und
-                  Pokale aber auch nur im Team gewinnen kannst, so ist es auch
-                  im Leben deutlich einfacher im Team seine Ziele zu erreichen.
+                  Träume zu verwirklichen. Weil ich frei und selbstbestimmt
+                  agieren, unabhängig von Zeit und Ort Geld verdienen und vor
+                  allem eines - in Menschen investieren wollte. Denn wie im
+                  Fußball, wo Du als Torwart zwar eine Art Einzelkämpfer bist,
+                  Meisterschaften und Pokale aber auch nur im Team gewinnen
+                  kannst, so ist es auch im Leben deutlich einfacher im Team
+                  Deine Ziele zu erreichen.
                 </p>
                 <p>
                   Egal ob im Network Marketing, beim PQS-Coaching oder in der
@@ -121,7 +120,7 @@
                   den Mut seinen Weg zu gehen. Herauszufinden, wer Du bist und
                   wie Du mehr aus Dir machst!
                 </p>
-                <p>Networker. PQS-Coach. Torwarttrainer.</p>
+                <p>Networker. PQS-Coach. Podcaster.</p>
               </div></transition
             >
             <button

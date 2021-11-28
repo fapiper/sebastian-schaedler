@@ -76,14 +76,44 @@ export default {
           },
         },
       },
-      feedbacks: Array(6).fill(
+      feedbacks: [
+        new Feedback(
+          'Andreas Küffner',
+          'Unternehmer',
+          'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
+          ''
+        ),
+        new Feedback(
+          'Fabian Schädler',
+          'Unternehmer',
+          'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
+          ''
+        ),
         new Feedback(
           'Marco Wirth',
           'Unternehmer',
-          'Manuel ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
+          'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
           ''
-        )
-      ),
+        ),
+        new Feedback(
+          'Margit Hodecek',
+          'Unternehmer',
+          'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
+          ''
+        ),
+        new Feedback(
+          'Walter Rotter',
+          'Unternehmer',
+          'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
+          ''
+        ),
+        new Feedback(
+          'Oliver Sorg',
+          'Unternehmer',
+          'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
+          ''
+        ),
+      ],
     }
   },
 }

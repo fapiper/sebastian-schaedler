@@ -15,8 +15,8 @@
         data-aos-duration="1000"
       >
         <li
-          v-for="index in 9"
-          :key="index"
+          v-for="value in values"
+          :key="value.title"
           class="
             px-4
             py-12
@@ -27,21 +27,19 @@
             justify-center
           "
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-10 w-10"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <h4 class="text-lg uppercase text-yellow">Lorem Ipsum</h4>
+          <img
+            v-lazy
+            class="w-16"
+            :src="
+              $cloudinary.image.url(value.imageId, {
+                width: '250',
+                crop: 'scale',
+              })
+            "
+            :alt="value.title"
+          />
+
+          <h4 class="text-lg uppercase text-yellow">{{ value.title }}</h4>
         </li>
       </ul>
       <TheButton class="mx-auto mt-8" to="contact">Kontaktiere mich!</TheButton>
@@ -50,7 +48,26 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      values: [
+        { title: 'Offenheit', imageId: 'sebastian-schaedler/Offenheit_erauaa' },
+        {
+          title: 'Authentizität',
+          imageId: 'sebastian-schaedler/Authentizitaet_nfhbxr',
+        },
+        {
+          title: 'Zuverlässigkeit',
+          imageId: 'sebastian-schaedler/Zuverlaessigkeit_exb6ov',
+        },
+        { title: 'Wille', imageId: 'sebastian-schaedler/Wille_xtt3ja' },
+        { title: 'Mut', imageId: 'sebastian-schaedler/Mut_gisq3g' },
+        { title: 'Respekt', imageId: 'sebastian-schaedler/Respekt_cmtcyi' },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="postcss"></style>

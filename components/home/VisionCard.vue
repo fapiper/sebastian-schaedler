@@ -88,13 +88,20 @@
               >
                 Network
               </h3>
-              <p data-aos="fade-up" data-aos-duration="800">
-                Als Franchise-Entrepreneur, Online-Marketer und Networker gründe
-                ich jeden Tag neue Start-Ups und halte lebenslang prozentuale
-                Beteiligungen an deren Erfolg. Mir macht es Spaß, neue
-                Wachstumsmärkte zu erschließen und Impulsgeber zu sein für neue
-                kreative Unternehmerwege!
-              </p>
+              <div data-aos="fade-up" data-aos-duration="800" class="space-y-2">
+                <p>
+                  Als Networker, Online-Marketer und Franchise-Entrepreneur
+                  gründe ich jeden Tag neue Start-Ups und halte lebenslange
+                  prozentuale Beteiligungen an deren Erfolg.
+                </p>
+                <p>
+                  <i
+                    >„Die reichsten Menschen der Welt suchen und bauen
+                    Netzwerke. Alle anderen suchen Arbeit“</i
+                  >
+                  - Robert Kiyosaki
+                </p>
+              </div>
             </div>
             <div>
               <h3
@@ -104,16 +111,24 @@
               >
                 Vision & Mission
               </h3>
-              <p data-aos="fade-up" data-aos-duration="800">
-                Ich möchte Menschen inspirieren, größer zu denken und
-                selbstbewusster zu handeln. Ich verstehe mich als Impulsgeber
-                zur mentalen & körperlichen Gesundheit, als Inspiration in
-                Fitness & Athletik, Supporter zur finanziellen & örtlichen
-                Unabhängigkeit, Mentor zur souveränen Persönlichkeit,
-                Unterstützer beim strategischen Unternehmensaufbau und Wegweiser
-                bei der Erschließen von neuen, qualitativ hochwertigen
-                Netzwerken.
-              </p>
+              <div data-aos="fade-up" class="space-y-2" data-aos-duration="800">
+                <p>
+                  Ich möchte Menschen mit besonderem Potenzial eine neue
+                  Perspektive geben, Talenten helfen, über sich hinauszuwachsen
+                  und direkt mit Ihnen daran arbeiten, ihre Träume zu
+                  verwirklichen. Ich verstehe mich als Mentor auf dem Weg zu
+                  mentaler & körperlicher Gesundheit, als Wegbegleiter zu
+                  finanzieller & örtlicher Unabhänigkeit.
+                </p>
+                <p>
+                  Egal ob im Network Marketing, beim PQS-Coaching oder in der
+                  Arbeit mit Torhütern – der Mensch steht im Mittelpunkt. Jeder
+                  ist individuell, hat seine ganz eigenen Stärken und
+                  Bedürfnisse und genau darum geht es – Offenheit, Vertrauen und
+                  den Mut seinen Weg zu gehen. Herauszufinden, wer Du bist und
+                  wie Du mehr aus Dir machst!
+                </p>
+              </div>
             </div>
 
             <TheButton data-aos="fade-up" data-aos-duration="800" to="contact"

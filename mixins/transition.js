@@ -40,6 +40,7 @@ export default {
     appear: true,
     leave(el, done) {
       this.$scroll.lock()
+      this.$nuxt.$emit('page-transition-leave-after')
       onPageLeave.play().then(() => {
         done()
       })

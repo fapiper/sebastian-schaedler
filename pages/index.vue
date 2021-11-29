@@ -23,7 +23,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Familienmensch. Networker. Charakter-Coach. Podcaster. Towarttrainer >> Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
+          'Familienmensch. Networker. Charakter-Coach. Podcaster. Towarttrainer ‒ Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
       },
     ],
   },

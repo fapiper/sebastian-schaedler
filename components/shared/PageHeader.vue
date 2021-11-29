@@ -32,12 +32,17 @@
       </div>
 
       <div ref="title" class="relative w-full max-w-lg text-center mt-64">
-        <h1 class="page-header-title">
+        <h1
+          class="page-header-title"
+          :class="{ 'page-header-title--small': size === 'sm' }"
+        >
           {{ title }}
         </h1>
-        <span class="page-header-title page-header-title--line">{{
-          title
-        }}</span>
+        <span
+          class="page-header-title page-header-title--line"
+          :class="{ 'page-header-title--small': size === 'sm' }"
+          >{{ title }}</span
+        >
         <div class="relative z-20">
           <span
             ref="lineHorizontal"
@@ -65,6 +70,10 @@ export default {
     subtitle: {
       type: String,
       default: '',
+    },
+    size: {
+      type: String,
+      default: 'md',
     },
     description: {
       type: String,
@@ -145,5 +154,9 @@ export default {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: theme('colors.white');
+}
+
+.page-header-title--small {
+  @apply text-5xl;
 }
 </style>

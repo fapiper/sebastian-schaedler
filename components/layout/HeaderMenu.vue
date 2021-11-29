@@ -37,13 +37,28 @@
           "
         >
           <li>
-            <a href="/" target="_blank" rel="noreferrer noopener">Instagram</a>
+            <a
+              href="https://www.instagram.com/sebastian.schaedler/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Instagram</a
+            >
           </li>
           <li>
-            <a href="/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/in/sebastian-schädler-18bb6aa7/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >LinkedIn</a
+            >
           </li>
           <li>
-            <a href="/" target="_blank" rel="noreferrer noopener">YouTube</a>
+            <a
+              href="https://www.facebook.com/sebastian.schadler.96"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Facebook</a
+            >
           </li>
         </ul>
       </div>

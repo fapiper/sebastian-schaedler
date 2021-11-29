@@ -1,7 +1,7 @@
 <template>
   <a
     class="flex items-center justify-center w-6 h-6 rounded-md"
-    href="/"
+    href="https://www.instagram.com/sebastian.schaedler/"
     target="_blank"
     rel="noopener noreferrer"
   >

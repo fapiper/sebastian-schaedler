@@ -8,18 +8,24 @@
     :rel="target === '_blank' && 'noopener noreferrer'"
     :target="target"
     class="
+      capitalize
       relative
       inline-flex
       items-center
       justify-center
       text-center
+      hover:text-white
       outline-none
       appearance-none
       space-x-2
       disabled:opacity-50
       cursor-pointer
+      bg-yellow
+      text-white
+      px-6
+      py-2
+      rounded
     "
-    :class="classes"
     data-pointer="large"
     @click="(e) => $emit('click', e)"
   >
@@ -44,13 +50,6 @@ export default {
   computed: {
     tag() {
       return this.href ? 'a' : this.to ? 'nuxt-link' : 'button'
-    },
-    classes() {
-      if (this.ssType === 'button') {
-        return 'bg-yellow text-white px-6 py-2 rounded'
-      } else {
-        return ['link', 'h-auto']
-      }
     },
   },
   mounted() {},

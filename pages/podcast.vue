@@ -4,7 +4,7 @@
       title="Podcast"
       subtitle="Sebastian & Fabian Schädler"
       description="Es war lange ein Wunsch mit meinem Bruder Fabian einen gemeinsamen Podcast zu machen. Jetzt ist es endlich soweit! Es geht um Fußball, Business und Mindset."
-      public-id="sebastian-schaedler/sebastianschaedler_wl73lh"
+      public-id="sebastian-schaedler/DSC00638_feszq6"
       alt="Sebastian Schädler - Podcast"
     />
     <Cover />

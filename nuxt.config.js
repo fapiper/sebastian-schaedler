@@ -123,11 +123,11 @@ export default {
     robots: {
       UserAgent: '*',
       Disallow: ['/terms-and-privacy'],
-      Sitemap: 'http://andreas-kueffner.com/sitemap.xml',
+      Sitemap: 'https://sebastian-schaedler.com/sitemap.xml',
     },
 
     sitemap: {
-      hostname: 'https://sebastian-schaedler..com',
+      hostname: 'https://sebastian-schaedler.com',
       exclude: ['/terms-and-privacy'],
     },
   },

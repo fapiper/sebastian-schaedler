@@ -26,7 +26,8 @@
     "swiper": "^6.5.9",
     "vanilla-lazyload": "^17.5.0",
     "vue-awesome-swiper": "^4.1.1",
-    "vuelidate": "^0.7.6"
+    "vuelidate": "^0.7.6",
+    "wistia-player-api-loader": "^1.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",

@@ -7,7 +7,7 @@ body {
 }
 
 section {
-  @apply my-44
+  @apply my-32 lg:my-44
 }
 
 .bg-text {

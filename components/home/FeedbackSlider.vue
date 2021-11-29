@@ -2,7 +2,7 @@
   <section>
     <div class="container px-4 mx-auto lg:max-w-5xl">
       <PrefixTitle
-        class="mb-4"
+        class="mb-16"
         prefix="Feedback"
         data-aos="fade-up"
         data-aos-duration="1000"

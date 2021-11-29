@@ -11,7 +11,7 @@
         lg:py-20
       "
     >
-      <div class="relative">
+      <div class="relative z-10">
         <span
           ref="lineVertical"
           class="
@@ -56,8 +56,7 @@
           w-full-4
           h-full
           flex
-          mt-20
-          lg:mt-0 lg:pl-20
+          lg:pl-20
         "
       >
         <div ref="img" class="w-full h-full flex">

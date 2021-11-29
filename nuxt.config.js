@@ -119,16 +119,16 @@ export default {
       twitterCard: 'summary_large_image',
       twitterCreator: 'Sebastian Schädler',
     },
+  },
 
-    robots: {
-      UserAgent: '*',
-      Disallow: ['/terms-and-privacy'],
-      Sitemap: 'https://sebastian-schaedler.com/sitemap.xml',
-    },
+  robots: {
+    UserAgent: '*',
+    Disallow: ['/terms-and-privacy'],
+    Sitemap: 'https://sebastian-schaedler.com/sitemap.xml',
+  },
 
-    sitemap: {
-      hostname: 'https://sebastian-schaedler.com',
-      exclude: ['/terms-and-privacy'],
-    },
+  sitemap: {
+    hostname: 'https://sebastian-schaedler.com',
+    exclude: ['/terms-and-privacy'],
   },
 }

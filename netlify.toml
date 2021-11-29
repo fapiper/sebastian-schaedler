@@ -10,3 +10,7 @@ functions = "functions"
 for = "/sw.js"
 [headers.values]
 cache-control = "max-age=0,no-cache,no-store,must-revalidate"
+[[headers]]
+for = "(https?:\/\/(.+?\.)?fast.wistia\.com(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?)" # js files should be set this way
+[headers.values]
+Cache-Control = "public, max-age=604800"

@@ -62,6 +62,7 @@
               <span></span>
               <span></span>
             </div>
+            <span class="sr-only">Toggle Navbar</span>
           </button>
         </div>
       </div>

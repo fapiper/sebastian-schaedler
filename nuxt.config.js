@@ -59,6 +59,7 @@ export default {
     families: {
       Rubik: [300, 400, 600, 800],
     },
+    display: 'swap',
   },
 
   cloudinary: {

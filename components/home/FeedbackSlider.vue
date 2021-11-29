@@ -26,12 +26,12 @@
             <div class="h-64 bg-blue-dark"></div>
             <div class="text-center p-4 bg-blue-dark">
               <p class="mb-2">„{{ feedback.text }}”</p>
-              <h4 class="text-yellow text-xl font-semibold uppercase">
+              <h3 class="text-yellow text-xl font-semibold uppercase">
                 {{ feedback.name }}
-              </h4>
-              <h5 class="text-xs">
+              </h3>
+              <h4 class="text-xs">
                 {{ feedback.subtitle }}
-              </h5>
+              </h4>
             </div>
           </div>
         </div>

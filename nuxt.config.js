@@ -20,6 +20,7 @@ export default {
     '~/plugins/simple-parallax.client.js',
     '~/plugins/lazy-load.client.js',
     '~/plugins/scroll.client.js',
+    '~/plugins/youtube.client.js',
   ],
 
   components: [

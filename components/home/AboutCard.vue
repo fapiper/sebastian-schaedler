@@ -41,7 +41,10 @@
             data-aos="fade-up"
             data-aos-duration="1000"
             video-id="asf228uz6d"
-            container-id="asf228uz6d"
+            :options="{
+              popover: true,
+              popoverContent: 'link',
+            }"
           >
             <img
               class="w-full"

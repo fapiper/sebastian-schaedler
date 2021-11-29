@@ -23,7 +23,10 @@
           class="swiper-slide"
         >
           <div class="w-full px-4 lg:px-0">
-            <div class="h-64 bg-blue-dark"></div>
+            <div class="video-container">
+              <VueYoutubePlayer :video-id="feedback.video"></VueYoutubePlayer>
+            </div>
+
             <div class="text-center p-4 bg-blue-dark">
               <p class="mb-2">„{{ feedback.text }}”</p>
               <h3 class="text-yellow text-xl font-semibold uppercase">
@@ -81,37 +84,37 @@ export default {
           'Andreas Küffner',
           'Unternehmer',
           'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
-          ''
+          'ScMzIvxBSi4'
         ),
         new Feedback(
           'Fabian Schädler',
           'Unternehmer',
           'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
-          ''
+          'ScMzIvxBSi4'
         ),
         new Feedback(
           'Marco Wirth',
           'Unternehmer',
           'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
-          ''
+          'ScMzIvxBSi4'
         ),
         new Feedback(
           'Margit Hodecek',
           'Unternehmer',
           'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
-          ''
+          'ScMzIvxBSi4'
         ),
         new Feedback(
           'Walter Rotter',
           'Unternehmer',
           'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
-          ''
+          'ScMzIvxBSi4'
         ),
         new Feedback(
           'Oliver Sorg',
           'Unternehmer',
           'Sebastian ist wirklich ein beeindruckender Mensch. Ich bin sehr froh, ihn zu kennen.',
-          ''
+          'ScMzIvxBSi4'
         ),
       ],
     }
@@ -119,4 +122,18 @@ export default {
 }
 </script>
 
-<style lang="postcss"></style>
+<style lang="postcss">
+.video-container {
+  @apply relative bg-blue-dark w-full overflow-hidden;
+}
+
+.video-container::after {
+  @apply block;
+  padding-top: 56.25%;
+  content: '';
+}
+
+.video-container iframe {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+</style>

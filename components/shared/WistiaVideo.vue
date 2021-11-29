@@ -1,5 +1,7 @@
 <template>
-  <div :id="containerId" class="block cursor-pointer"><slot></slot></div>
+  <div :id="'wistia_' + videoId" class="block cursor-pointer">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
@@ -8,21 +10,20 @@ if (process.client) WistiaPlayerApiLoader = require('wistia-player-api-loader')
 
 export default {
   props: {
-    containerId: {
-      type: String,
-      required: true,
-    },
     videoId: {
       type: String,
       required: true,
+    },
+    options: {
+      type: Object,
+      default: () => {},
     },
   },
   mounted() {
     WistiaPlayerApiLoader.load((Wistia) => {
       Wistia.embed(this.videoId, {
-        container: this.containerId,
-        popover: true,
-        popoverContent: 'link',
+        containerId: 'wistia_' + this.videoId,
+        ...this.options,
       })
     })
   },

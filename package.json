@@ -26,6 +26,7 @@
     "swiper": "^6.5.9",
     "vanilla-lazyload": "^17.5.0",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-youtube-embed": "^2.2.2",
     "vuelidate": "^0.7.6",
     "wistia-player-api-loader": "^1.0.0"
   },

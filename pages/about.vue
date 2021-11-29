@@ -8,6 +8,7 @@
       alt="Sebastian Schädler - About"
     />
     <KeywordBanner />
+    <VideoScreen />
     <StoryCard />
     <ValueList />
   </div>

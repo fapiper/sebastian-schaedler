@@ -591,7 +591,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 h3 {
   @apply text-2xl font-semibold my-4 uppercase tracking-wide;
 }

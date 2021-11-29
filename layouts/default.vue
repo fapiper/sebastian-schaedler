@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen w-full overflow-hidden">
+    <CookieHint />
     <PageLoader />
     <TheHeader />
     <Nuxt />

@@ -22,6 +22,7 @@ export default {
     '~/plugins/scroll.client',
     '~/plugins/youtube.client',
     '~/plugins/jsonld',
+    '~/plugins/vue-gtag.client',
   ],
 
   components: [
@@ -40,6 +41,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     'nuxt-gsap-module',
+    'cookie-universal-nuxt',
   ],
 
   modules: [

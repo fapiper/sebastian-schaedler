@@ -2,10 +2,10 @@ export default {
   target: 'static',
 
   head: {
+    title: 'Sebastian Schädler',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -14,13 +14,14 @@ export default {
   css: [],
 
   plugins: [
-    '~/plugins/vue-awesome-swiper.client.js',
-    '~/plugins/vuelidate.js',
-    '~/plugins/aos.client.js',
-    '~/plugins/simple-parallax.client.js',
-    '~/plugins/lazy-load.client.js',
-    '~/plugins/scroll.client.js',
-    '~/plugins/youtube.client.js',
+    '~/plugins/vue-awesome-swiper.client',
+    '~/plugins/vuelidate',
+    '~/plugins/aos.client',
+    '~/plugins/simple-parallax.client',
+    '~/plugins/lazy-load.client',
+    '~/plugins/scroll.client',
+    '~/plugins/youtube.client',
+    '~/plugins/jsonld',
   ],
 
   components: [
@@ -41,7 +42,19 @@ export default {
     'nuxt-gsap-module',
   ],
 
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxtjs/cloudinary'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa',
+    '@nuxtjs/cloudinary',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap', // If you use other modules, always declare the sitemap module at end of array
+  ],
+
+  env: {
+    baseUrl: process.env.BASE_URL,
+    dev: process.env.NODE_ENV !== 'production',
+    googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
+  },
 
   axios: {
     baseURL: process.env.BASE_URL,
@@ -81,9 +94,10 @@ export default {
     },
     manifest: {
       name: 'Sebastian Schädler',
-      short_name: 'Sebastian Schädler.',
+      short_name: 'Sebastian Schädler',
       lang: 'de',
-      description: 'Sebastian Schädler',
+      description:
+        'Familienmensch. Networker. Charakter-Coach. Podcaster. Towarttrainer >> Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
       start_url: '',
       background_color: '#1E3143',
     },
@@ -91,22 +105,29 @@ export default {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       name: 'Sebastian Schädler',
-      description: 'Sebastian Schädler',
+      description:
+        'Familienmensch. Networker. Charakter-Coach. Podcaster. Towarttrainer >> Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
       theme_color: '#1E3143',
       lang: 'de',
       ogHost: 'https://sebastian-schaedler.com/',
-      /* ogImage: {
-         path: 'https://sebastian-schaedler.com/schaedler.png',
-         width: '1200',
-         height: '627',
-       },
- */
+      ogImage: {
+        path: 'https://sebastian-schaedler.com/sebastianschaedler.png',
+        width: '1200',
+        height: '627',
+      },
       twitterCard: 'summary_large_image',
       twitterCreator: 'Sebastian Schädler',
     },
-  },
 
-  build: {
-    transpile: ['splitting'],
+    robots: {
+      UserAgent: '*',
+      Disallow: ['/terms-and-privacy'],
+      Sitemap: 'http://andreas-kueffner.com/sitemap.xml',
+    },
+
+    sitemap: {
+      hostname: 'https://sebastian-schaedler..com',
+      exclude: ['/terms-and-privacy'],
+    },
   },
 }

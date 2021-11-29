@@ -24,7 +24,9 @@
         >
           <div class="w-full px-4 lg:px-0">
             <div class="video-container">
-              <VueYoutubePlayer :video-id="feedback.video"></VueYoutubePlayer>
+              <client-only>
+                <VueYoutubePlayer :video-id="feedback.video"></VueYoutubePlayer>
+              </client-only>
             </div>
 
             <div class="text-center p-4 bg-blue-dark">
@@ -67,15 +69,15 @@ export default {
             initialSlide: 1,
             spaceBetween: 16,
             slidesPerView: 3,
+            freeMode: {
+              enabled: true,
+              sticky: false,
+            },
           },
-          1280: {
+          1536: {
             initialSlide: 2,
             slidesPerView: 4,
             spaceBetween: 16,
-            freeMode: {
-              enabled: true,
-              sticky: true,
-            },
           },
         },
       },

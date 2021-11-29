@@ -53,7 +53,11 @@
           {{ new Date().getFullYear() }}
           Sebastian Schädler
         </li>
-        <li>Impressum / Datenschutzerklärung</li>
+        <li>
+          <NuxtLink to="/terms-and-privacy"
+            >Impressum und Datenschutzerklärung</NuxtLink
+          >
+        </li>
       </ul>
     </div>
   </transition>

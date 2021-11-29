@@ -104,10 +104,10 @@
               <NuxtLink to="/contact">Kontakt</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/terms">Impressum</NuxtLink>
+              <NuxtLink to="/terms-and-privacy">Impressum</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/privacy">Datenschutz</NuxtLink>
+              <NuxtLink to="/terms-and-privacy">Datenschutz</NuxtLink>
             </li>
           </ul>
         </div>
@@ -117,7 +117,15 @@
             {{ new Date().getFullYear() }}
             Sebastian Schädler
           </li>
-          <li>Design by NXT YOU</li>
+          <li>
+            Design by
+            <a
+              href="https://nxtyou.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >NXT YOU</a
+            >
+          </li>
         </ul>
       </div>
     </div>

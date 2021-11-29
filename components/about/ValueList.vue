@@ -29,7 +29,7 @@
         >
           <img
             v-lazy
-            class="w-16"
+            class="w-10 lg:w-14"
             :src="
               $cloudinary.image.url(value.imageId, {
                 width: '250',

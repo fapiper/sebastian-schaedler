@@ -20,7 +20,15 @@ import Transition from '~/mixins/transition.js'
 export default {
   mixins: [Transition],
   head: {
-    title: 'About - Sebastian Schädler',
+    titleTemplate: 'About - %s',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
+      },
+    ],
   },
 }
 </script>

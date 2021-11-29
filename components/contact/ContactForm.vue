@@ -82,7 +82,7 @@
               "
             >
               <TheButton @click="tryAgain">Erneut Versuchen</TheButton>
-              <TheButton href="mailto:info@nxtyou.de"
+              <TheButton href="mailto:info@sebastian-schaedler.com"
                 >Email Schreiben</TheButton
               >
             </div>

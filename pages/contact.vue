@@ -17,7 +17,15 @@ import Transition from '~/mixins/transition.js'
 export default {
   mixins: [Transition],
   head: {
-    title: 'Kontakt - Sebastian Schädler',
+    titleTemplate: 'Kontakt - %s',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Du kannst mich jederzeit kontaktieren, lass uns kennenlernen, über Möglichkeiten der Zusammenarbeit sprechen, ein Podcast Interview machen, dein Potential entfalten oder einfach eine Runde Fußball spielen. Ich freue mich auf dich!',
+      },
+    ],
   },
 }
 </script>

@@ -1,9 +1,9 @@
 <template>
   <div>
     <PageHeader
-      title="Datenschutzerklärung"
+      title="Impressum und Datenschutzerklärung"
       public-id="sebastian-schaedler/sebastianschaedler_wl73lh"
-      alt="Sebastian Schädler - Datenschutzerklärung"
+      alt="Sebastian Schädler - Impressum und Datenschutzerklärung"
     />
     <section>
       Sebastian Schädler Straße und Hausnummer PLZ und Ort
@@ -39,7 +39,7 @@ import Transition from '~/mixins/transition.js'
 export default {
   mixins: [Transition],
   head: {
-    title: 'Datenschutzerklärung - Sebastian Schädler',
+    titleTemplate: 'Impressum und Datenschutzerklärung - %s',
   },
 }
 </script>

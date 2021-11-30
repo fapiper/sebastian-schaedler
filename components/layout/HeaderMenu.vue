@@ -11,7 +11,7 @@
           w-full
           h-screen
           z-50
-          backdrop-filter backdrop-blur-xl
+          bg-black bg-opacity-75
         "
         @click="$emit('update:active', false)"
       ></div>
@@ -32,8 +32,8 @@
           lg:hidden
         "
       >
-        <div class="h-20 flex-auto w-full"></div>
-        <div class="p-4 pt-20 flex-auto h-full overflow-auto flex flex-col">
+        <div class="w-full"><div class="h-20"></div></div>
+        <div class="p-4 flex-auto overflow-auto flex flex-col">
           <ul class="w-full flex flex-col space-y-4 text-3xl text-right">
             <li v-for="(link, index) of links" :key="index">
               <NuxtLink
@@ -81,7 +81,7 @@
             </li>
           </ul>
         </div>
-        <ul class="flex-1 w-full text-right text-xs mt-auto p-4">
+        <ul class="w-full text-right text-xs p-4">
           <li>
             Copyright <Copyright class="inline-block w-4 h-4 mb-0.5" />
             {{ new Date().getFullYear() }}

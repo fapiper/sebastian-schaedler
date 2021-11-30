@@ -127,4 +127,19 @@ export default {
 .menu-button--active.menu-button span {
   @apply bg-black !important;
 }
+
+.menu-button--active span {
+  @apply transform;
+}
+.menu-button--active span:nth-child(1) {
+  @apply rotate-45 top-1/2 -translate-y-1/2;
+}
+
+.menu-button--active span:nth-child(2) {
+  @apply opacity-0;
+}
+
+.menu-button--active span:nth-child(3) {
+  @apply -rotate-45 bottom-1/2 translate-y-1/2;
+}
 </style>

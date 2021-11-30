@@ -10,7 +10,7 @@
       rounded-md
       p-1
     "
-    href="/"
+    href="https://www.linkedin.com/in/sebastian-schädler-18bb6aa7/"
     target="_blank"
     rel="noopener noreferrer"
   >

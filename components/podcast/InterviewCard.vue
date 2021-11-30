@@ -27,7 +27,11 @@
             Du möchtest gerne mit in unserem Podcast sein? Schreibe mir gerne
             direkt! Wir freuen uns auf dich!
           </p>
-          <TheButton data-aos="fade-up" data-aos-duration="1000" class="mt-8"
+          <TheButton
+            to="contact"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="mt-8"
             >Schreibe uns!</TheButton
           >
         </div>

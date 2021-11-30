@@ -10,7 +10,7 @@
       rounded-md
       p-1
     "
-    href="/"
+    href="https://www.facebook.com/sebastian.schadler.96"
     target="_blank"
     rel="noopener noreferrer"
   >

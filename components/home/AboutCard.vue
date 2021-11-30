@@ -12,7 +12,7 @@
           <div class="space-y-2">
             <p data-aos="fade-up" data-aos-duration="1000">
               Familienmensch.
-              <span class="text-yellow">Networker.</span> PQS-Coach.
+              <span class="text-yellow">Networker.</span> Charakter-Coach.
               <span class="text-yellow">Podcaster.</span> Towarttrainer.
             </p>
             <p data-aos="fade-up" data-aos-duration="1000">

@@ -121,9 +121,9 @@
                   finanzieller & örtlicher Unabhänigkeit.
                 </p>
                 <p>
-                  Egal ob im Network Marketing, beim PQS-Coaching oder in der
-                  Arbeit mit Torhütern – der Mensch steht im Mittelpunkt. Jeder
-                  ist individuell, hat seine ganz eigenen Stärken und
+                  Egal ob im Network Marketing, beim Charakter-Coaching oder in
+                  der Arbeit mit Torhütern – der Mensch steht im Mittelpunkt.
+                  Jeder ist individuell, hat seine ganz eigenen Stärken und
                   Bedürfnisse und genau darum geht es – Offenheit, Vertrauen und
                   den Mut seinen Weg zu gehen. Herauszufinden, wer Du bist und
                   wie Du mehr aus Dir machst!

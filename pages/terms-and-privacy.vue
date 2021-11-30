@@ -11,8 +11,8 @@
         <h2 class="title text-yellow mb-4 lg:mb-8">Impressum</h2>
         <p>
           Sebastian Schädler<br />
-          Straße und Hausnummer<br />
-          PLZ und Ort<br />
+          Hauptstraße 16<br />
+          78224 Singen<br />
           info@sebastian-schaedler.com
         </p>
         <h3>Rechtliche Hinweise</h3>
@@ -34,11 +34,11 @@
         <h4>Links</h4>
         <p>
           Die auf dieser Website befindlichen Links dienen der
-          Benutzerfreundlichkeit. SVART GmbH übernimmt keine Verantwortung für
-          die verlinkte Website, deren Provider oder deren Inhalte, Produkte
-          oder Dienstleistungen. SVART GmbH übernimmt keine Garantie für die
-          Richtigkeit, Verfügbarkeit oder Rechtmäßigkeit einer verlinkten
-          Website.
+          Benutzerfreundlichkeit. Sebastian Schädler übernimmt keine
+          Verantwortung für die verlinkte Website, deren Provider oder deren
+          Inhalte, Produkte oder Dienstleistungen. Sebastian Schädler übernimmt
+          keine Garantie für die Richtigkeit, Verfügbarkeit oder Rechtmäßigkeit
+          einer verlinkten Website.
         </p>
         <h4>Copyright & Marken</h4>
         <p>
@@ -161,8 +161,10 @@
             Die verantwortliche Stelle für die Datenverarbeitung auf dieser
             Website ist:
           </p>
-          <p>Sebastian Schädler<br />STRAßE<br />PLZ ORT</p>
-          <p>Telefon: <br />E-Mail: info@sebastian-schaedler.com</p>
+          <p>Sebastian Schädler<br />Hauptstraße 16<br />78224 Singen</p>
+          <p>
+            Telefon: +491727490458<br />E-Mail: info@sebastian-schaedler.com
+          </p>
           <p>
             Verantwortliche Stelle ist die natürliche oder juristische Person,
             die allein oder gemeinsam mit anderen über die Zwecke und Mittel der

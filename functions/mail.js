@@ -91,7 +91,7 @@ exports.handler = async function (event, context, callback) {
     to: RECIPIENT_EMAIL,
     subject: `[${RECIPIENT_DOMAIN}] Neues Formular von ${form.firstName} ${form.lastName}`,
     html: `
-      <h1>Neues Formular von ${form.name}</h1>
+      <h1>Neues Formular von ${form.firstName} ${form.lastName}</h1>
       ${mail.body}
       ${mail.footer}
 `,
@@ -103,7 +103,7 @@ exports.handler = async function (event, context, callback) {
     subject: `[${RECIPIENT_DOMAIN}] Kopie Ihrer Nachricht an Sebastian Schädler`,
     html: `
       <h1>Kopie Ihrer Nachricht an ${RECIPIENT_NAME}</h1>
-      <p>Vielen Dank für Ihre Anfrage. Anbei finden Sie eine Kopie Ihrer Nachricht an Sebastian Schädler:</p>
+      <p>Guten Tag ${form.firstName} ${form.lastName}<br/> <br/>Vielen Dank für Ihre Anfrage. Anbei finden Sie eine Kopie Ihrer Nachricht an Sebastian Schädler:</p>
       ${mail.body}
       ${mail.footer}
 `,

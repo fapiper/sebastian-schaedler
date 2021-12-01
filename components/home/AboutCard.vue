@@ -13,7 +13,7 @@
             <p data-aos="fade-up" data-aos-duration="1000">
               Familienmensch.
               <span class="text-yellow">Networker.</span> Charakter-Coach.
-              <span class="text-yellow">Podcaster.</span> Towarttrainer.
+              <span class="text-yellow">Podcaster.</span> Torwarttrainer.
             </p>
             <p data-aos="fade-up" data-aos-duration="1000">
               Mit mehr als sieben Jahren Erfahrung auf den Gebieten der

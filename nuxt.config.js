@@ -100,7 +100,7 @@ export default {
       short_name: 'Sebastian Schädler',
       lang: 'de',
       description:
-        'Familienmensch. Networker. Charakter-Coach. Podcaster. Towarttrainer ‒ Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
+        'Familienmensch. Networker. Charakter-Coach. Podcaster. Torwarttrainer ‒ Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
       start_url: '',
       background_color: '#1E3143',
     },
@@ -109,7 +109,7 @@ export default {
       viewport: 'width=device-width, initial-scale=1',
       name: 'Sebastian Schädler',
       description:
-        'Familienmensch. Networker. Charakter-Coach. Podcaster. Towarttrainer ‒ Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
+        'Familienmensch. Networker. Charakter-Coach. Podcaster. Torwarttrainer ‒ Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
       theme_color: '#1E3143',
       lang: 'de',
       ogHost: 'https://sebastian-schaedler.com/',

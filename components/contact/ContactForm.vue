@@ -102,7 +102,11 @@
                 d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p>Die Anfrage wurde erfolgreich verschickt.</p>
+            <p>
+              Die Anfrage wurde erfolgreich verschickt. Eine Kopie der Nachricht
+              wurde an
+              {{ data.email }} gesendet.
+            </p>
             <div
               class="
                 flex
@@ -113,7 +117,7 @@
                 sm:space-y-0 sm:space-x-4
               "
             >
-              <TheButton @click="navigateBack">Zurück</TheButton>
+              <TheButton @click="resetForm">Zurück</TheButton>
             </div>
           </div>
         </div>
@@ -413,9 +417,6 @@ export default {
       } catch (err) {
         this.error = true
       }
-      if (!this.error) {
-        this.resetForm()
-      }
       this.loading = false
     },
     resetForm() {
@@ -430,6 +431,8 @@ export default {
         message: '',
         consent: false,
       }
+
+      this.overlayActive = false
     },
   },
 }

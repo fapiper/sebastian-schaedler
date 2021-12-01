@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer')
 const smtpTransport = require('nodemailer-smtp-transport')
 
 const RECIPIENT_DOMAIN = 'sebastian-schaedler.com'
-const RECIPIENT_EMAIL = 'fabianpiper@web.de' // 'info@' + RECIPIENT_DOMAIN
+const RECIPIENT_EMAIL = 'info@' + RECIPIENT_DOMAIN
 const RECIPIENT_NAME = 'Sebastian Schädler'
 
 const { SMTP_USER, SMTP_PASS } = process.env
@@ -103,7 +103,7 @@ exports.handler = async function (event, context, callback) {
     subject: `[${RECIPIENT_DOMAIN}] Kopie Ihrer Nachricht an Sebastian Schädler`,
     html: `
       <h1>Kopie Ihrer Nachricht an ${RECIPIENT_NAME}</h1>
-      <p>Guten Tag ${form.firstName} ${form.lastName}<br/> <br/>Vielen Dank für Ihre Anfrage. Anbei finden Sie eine Kopie Ihrer Nachricht an Sebastian Schädler:</p>
+      <p>Vielen Dank für Ihre Anfrage. Anbei finden Sie eine Kopie Ihrer Nachricht an Sebastian Schädler:</p>
       ${mail.body}
       ${mail.footer}
 `,

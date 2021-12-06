@@ -14,8 +14,8 @@ export default {
     return {
       jsonld: {
         logo: {
-          url: 'https://sebastian-schaedler.com /',
-          logo: 'https://sebastian-schaedler.com /sebastianschaedler.png',
+          url: 'https://sebastian-schaedler.com/',
+          logo: 'https://sebastian-schaedler.com/logo.png',
         },
         breadcrumbs: [
           {

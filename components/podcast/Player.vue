@@ -7,12 +7,16 @@
         allow="autoplay *; encrypted-media *; fullscreen *"
         frameborder="0"
         height="450"
-        scrolling="no"
         class="w-full overflow-hidden bg-transparent"
         sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-        src="https://embed.podcasts.apple.com/de/podcast/dream-plan-you-by-andreas-k%C3%BCffner/id1480110465?l=en"
+        src="https://embed.podcasts.apple.com/de/podcast/charakterspiel-by-sebastian-fabian-sch%C3%A4dler/id1598117927"
       ></iframe>
-      <TheButton href="#">mehr Folgen</TheButton>
+
+      <TheButton
+        target="_blank"
+        href="https://podcasts.apple.com/de/podcast/charakterspiel-by-sebastian-fabian-sch%C3%A4dler/id1598117927"
+        >Mehr Folgen</TheButton
+      >
     </div>
   </section>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <a
     class="flex items-center justify-center w-6 h-6 rounded-md"
-    href="/"
+    href="https://podcasts.apple.com/de/podcast/charakterspiel-by-sebastian-fabian-sch%C3%A4dler/id1598117927"
     target="_blank"
     rel="noopener noreferrer"
   >

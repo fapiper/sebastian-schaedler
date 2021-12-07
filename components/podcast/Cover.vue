@@ -44,7 +44,7 @@
             crop: 'scale',
           })
         "
-        alt="Podcast Charakterspiel"
+        alt="Charakterspiel by Sebastian & Fabian Schädler"
       />
     </div>
 
@@ -52,7 +52,7 @@
       <a
         data-aos="fade"
         data-aos-duration="1100"
-        href=""
+        href="https://open.spotify.com/show/6wZTUSUcQvVFYx1HcoEp9C?si=69d8f69bb312454c"
         target="_blank"
         rel="noreferrer noopener"
         class="
@@ -77,12 +77,12 @@
               }
             )
           "
-          alt="Podcast Spotify"
+          alt="Charakterspiel by Sebastian & Fabian Schädler: Podcast auf Spotify"
       /></a>
       <a
         data-aos="fade-up"
         data-aos-duration="1000"
-        href=""
+        href="https://podcasts.apple.com/de/podcast/charakterspiel-by-sebastian-fabian-sch%C3%A4dler/id1598117927"
         target="_blank"
         rel="noreferrer noopener"
         class="
@@ -104,7 +104,7 @@
               crop: 'scale',
             })
           "
-          alt="Podcast on Apple"
+          alt="Charakterspiel by Sebastian & Fabian Schädler: Podcast auf Apple"
       /></a>
     </div>
   </section>

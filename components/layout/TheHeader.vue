@@ -30,11 +30,9 @@
             <li>
               <NuxtLink to="/#coaching-character">Coaching</NuxtLink>
             </li>
-            <!--
             <li>
               <NuxtLink to="/podcast">Podcast</NuxtLink>
             </li>
--->
 
             <li class="!ml-auto">
               <NuxtLink class="flex items-center space-x-2" to="/contact">

@@ -113,7 +113,7 @@ export default {
         { title: 'About', to: '/about' },
         { title: 'Business', to: '/#business-and-vision' },
         { title: 'Coaching', to: '/#coaching-character' },
-        /* { title: 'Podcast', to: '/podcast' }, */
+        { title: 'Podcast', to: '/podcast' },
         { title: 'Kontakt', to: '/contact' },
       ],
       tl: null,

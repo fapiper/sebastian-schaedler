@@ -62,9 +62,9 @@
             <li>
               <NuxtLink to="/#coaching-character">Coaching</NuxtLink>
             </li>
-            <!--            <li>
+            <li>
               <NuxtLink to="/podcast">Podcast</NuxtLink>
-            </li>-->
+            </li>
           </ul>
           <ul class="space-y-2 col-span-3 lg:col-span-1">
             <li

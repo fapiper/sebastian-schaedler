@@ -9,24 +9,11 @@ export default {
         defaults: { duration: 1, ease: 'Power4.easeInOut' },
       })
     onPageEnter = tl()
-      .set('[data-transition-layout]', {
-        autoAlpha: 0,
-        y: 40,
-      })
       .to('[data-transition-bg]', { height: 0 }, 0.6)
       .to('[data-transition-logo]', { y: -450, autoAlpha: 0 }, 0)
 
     onPageLeave = tl()
       .set('[data-transition-logo]', { autoAlpha: 0, y: 40 })
-      .to(
-        '[data-transition-layout]',
-        {
-          autoAlpha: 0,
-          y: 80,
-          ease: 'Power4.easeOut',
-        },
-        0
-      )
       .to('[data-transition-logo]', { autoAlpha: 1, y: 0 }, 0.8)
       .to(
         '[data-transition-bg]',

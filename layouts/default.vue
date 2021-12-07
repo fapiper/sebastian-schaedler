@@ -41,7 +41,7 @@ export default {
   jsonld() {
     const items = this.jsonld.breadcrumbs.map((item, index) => ({
       '@type': 'ListItem',
-      position: index + 1,
+      position: index <= 0 ? 1 : 2,
       name: item.text,
       item: item.url,
     }))

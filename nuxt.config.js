@@ -129,7 +129,7 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://sebastian-schaedler.com',
+    hostname: 'https://www.sebastian-schaedler.com',
     exclude: ['/terms-and-privacy'],
   },
 }

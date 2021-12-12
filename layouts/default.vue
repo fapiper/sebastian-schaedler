@@ -14,24 +14,24 @@ export default {
     return {
       jsonld: {
         logo: {
-          url: 'https://sebastian-schaedler.com/',
-          logo: 'https://sebastian-schaedler.com/logo.png',
+          url: 'https://www.sebastian-schaedler.com/',
+          logo: 'https://www.sebastian-schaedler.com/logo.png',
         },
         breadcrumbs: [
           {
-            url: 'https://sebastian-schaedler.com',
+            url: 'https://www.sebastian-schaedler.com',
             text: 'Startseite',
           },
           {
-            url: 'https://sebastian-schaedler.com/about',
+            url: 'https://www.sebastian-schaedler.com/about',
             text: 'About',
           },
           {
-            url: 'https://sebastian-schaedler.com/contact',
+            url: 'https://www.sebastian-schaedler.com/contact',
             text: 'Kontakt',
           },
           {
-            url: 'https://sebastian-schaedler.com/podcast',
+            url: 'https://www.sebastian-schaedler.com/podcast',
             text: 'Podcast',
           },
         ],

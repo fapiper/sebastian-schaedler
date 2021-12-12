@@ -111,9 +111,9 @@ export default {
         'Familienmensch. Networker. Charakter-Coach. Podcaster. Torwarttrainer ‒ Als Franchise-Entrepreneur, Online-Marketer und Networker gründe ich jeden Tag neue Start-Ups und halte lebenslang prozentuale Beteiligungen an deren Erfolg.',
       theme_color: '#1E3143',
       lang: 'de',
-      ogHost: 'https://sebastian-schaedler.com/',
+      ogHost: 'https://www.sebastian-schaedler.com',
       ogImage: {
-        path: 'https://sebastian-schaedler.com/sebastianschaedler.png',
+        path: 'https://www.sebastian-schaedler.com/sebastianschaedler.png',
         width: '1200',
         height: '627',
       },
@@ -125,7 +125,7 @@ export default {
   robots: {
     UserAgent: '*',
     Disallow: ['/terms-and-privacy'],
-    Sitemap: 'https://sebastian-schaedler.com/sitemap.xml',
+    Sitemap: 'https://www.sebastian-schaedler.com/sitemap.xml',
   },
 
   sitemap: {
